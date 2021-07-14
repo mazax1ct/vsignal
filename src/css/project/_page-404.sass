@@ -1,0 +1,90 @@
+.page-404
+  .page-content
+    display: flex
+    padding-top: 100px
+    padding-bottom: 0
+
+    @media(min-width: $sm)
+      padding-top: 165px
+
+  &__info
+    margin: auto
+    max-width: 1600px
+    padding-left: 30px
+    padding-right: 30px
+    text-align: center
+    width: 100%
+
+    @media (min-width: $sm)
+      padding-left: 40px
+      padding-right: 40px
+
+    @media (min-width: 1024px)
+      align-items: center
+      display: flex
+      text-align: left
+
+    @media (min-width: $lg)
+      padding-left: 80px
+      padding-right: 80px
+
+    h1
+      font-size: 20px
+      line-height: 1.5
+      margin-bottom: 15px
+
+      @media(min-width: $sm)
+        font-size: 30px
+        margin-bottom: 20px
+
+  &__text-block
+    @media(min-width: 1024px)
+      width: 50%
+
+  &__text
+    font-size: 16px
+    line-height: 1.6
+    letter-spacing: 0.48px
+    margin-bottom: 30px
+
+    @media(min-width: $sm)
+      margin-bottom: 40px
+
+  &__link
+    align-items: center
+    color: $main-color
+    display: inline-flex
+    font-size: 20px
+    font-weight: 700
+    text-decoration: none
+
+    @media(min-width: $sm)
+      font-size: 24px
+
+    svg
+      fill: $main-color
+      height: 17px
+      margin-left: 10px
+      width: 32px
+
+      @media(min-width: $sm)
+        margin-left: 15px
+
+  &__image
+    margin-bottom: 40px
+    padding-left: 20px
+    padding-right: 20px
+
+    @media(min-width: $sm)
+      margin-bottom: 60px
+
+    @media(min-width: 1024px)
+      margin: 0
+      padding: 0
+      width: 50%
+
+    img
+      max-width: 360px
+
+      @media (min-width: $lg)
+        max-width: 510px

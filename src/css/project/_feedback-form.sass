@@ -1,0 +1,92 @@
+.feedback-form
+  padding-top: 40px
+  padding-bottom: 40px
+
+  @media(min-width: $sm)
+    padding-top: 80px
+    padding-bottom: 80px
+
+  @media(min-width: $lg)
+    padding-top: 120px
+    padding-bottom: 120px
+
+  &:last-child
+    margin-bottom: -110px
+
+  h2
+    margin-top: 0
+    margin-bottom: 45px
+
+    @media(min-width: $sm)
+      margin-bottom: 60px
+
+  &__row
+    margin-bottom: 30px
+
+    @media(min-width: $sm)
+      display: flex
+      flex-flow: wrap
+      margin-left: -20px
+      margin-right: -20px
+      margin-bottom: 60px
+
+  &__block
+    @media(min-width: $sm)
+      padding-left: 20px
+      padding-right: 20px
+      width: 50%
+
+    @media(min-width: $lg)
+      width: 25%
+
+    &:not(:last-child)
+      margin-bottom: 30px
+
+      @media(min-width: $sm)
+        margin-bottom: 50px
+
+      @media(min-width: $lg)
+        margin-bottom: 0
+
+    &:last-child
+      @media(min-width: $sm)
+        width: 100%
+
+      @media(min-width: $lg)
+        width: 50%
+
+  &__label
+    display: block
+
+
+
+  &__button-block
+    @media(min-width: $sm)
+      align-items: center
+      display: flex
+
+    .button
+      margin-bottom: 25px
+      width: 100%
+
+      @media(min-width: $sm)
+        margin-bottom: 0
+        margin-right: 45px
+        min-width: 200px
+        width: auto
+
+      @media(min-width: $xl)
+        min-width: 265px
+
+  &__note
+    color: rgba($brand-color, 0.3)
+    font-size: 12px
+    line-height: 1.6
+    letter-spacing: 0.36px
+    text-align: center
+
+    @media(min-width: $sm)
+      font-size: 14px
+      letter-spacing: 0.42px
+      max-width: 525px
+      text-align: left

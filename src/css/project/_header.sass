@@ -1,0 +1,273 @@
+.header
+  background-color: #fff
+  box-shadow: none
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  transition: box-shadow 0.3s
+  z-index: 10
+
+  &.scrolled
+    box-shadow: 0 0 6px 0 rgba($text-color, 0.3)
+
+  &__inner
+    align-items: center
+    display: flex
+    min-height: 80px
+    margin-left: auto
+    margin-right: auto
+    padding-left: 30px
+    padding-right: 30px
+
+    @media (min-width: $sm)
+      min-height: 145px
+      padding-left: 40px
+      padding-right: 40px
+
+    @media (min-width: $lg)
+      padding-left: 60px
+      padding-right: 60px
+
+  &__logo
+    display: block
+    margin-right: auto
+    position: relative
+    width: 90px
+    z-index: 10
+
+    svg
+      display: block
+      fill: $brand-color
+      height: 30px
+      transition: fill 0.3s
+      width: 90px
+
+      @media(min-width: $sm)
+        height: 45px
+        width: 140px
+
+    @media(min-width: $sm)
+      width: 140px
+
+  &__links
+    display: none
+    font-size: 16px
+    list-style: none
+    line-height: 1.6
+    letter-spacing: 0.48px
+    margin-right: 60px
+
+    @media(min-width: $sm)
+      display: flex
+
+  &__links-item
+    &:not(:last-child)
+      margin-right: 40px
+
+  &__link
+    color: $text-color
+    position: relative
+    text-decoration: none
+
+    &::after
+      background-color: $selection-color
+      bottom: 1px
+      content: ''
+      height: 0
+      left: 0
+      position: absolute
+      top: auto
+      transition: height 0.3s
+      width: 100%
+      z-index: -1
+
+    &:hover,
+    &:focus
+      color: $main-color
+
+    &:active
+      &::after
+        height: 8px
+
+  &__burger
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    margin-right: -7.5px
+    padding: 0
+    position: relative
+    width: 40px
+    z-index: 10
+
+    svg
+      fill: $main-color
+      height: 25px
+      width: 25px
+
+  &__socials
+    display: none
+    font-size: 20px
+    line-height: 1.7
+    list-style: none
+    letter-spacing: 0.6px
+    margin: 40px 0 30px
+    padding: 0
+
+    @media(min-width: $sm)
+      display: flex
+      flex-wrap: wrap
+
+  &__socials-item
+    &:not(:last-child)
+      margin-bottom: 10px
+
+      @media(min-width: $sm)
+        margin-right: 35px
+
+    a
+      color: $text-color
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        color: $main-color
+
+  &__mail-block,
+  &__phone-block,
+  &__address
+    font-size: 16px
+    line-height: 1.6
+    letter-spacing: 0.48px
+
+  &__mail-block
+    margin-bottom: 0
+
+    @media(min-width: $sm)
+      font-size: 20px
+      line-height: 1.7
+      letter-spacing: 0.6px
+      margin-bottom: 20px
+
+  &__phone-block
+    display: none
+    margin-bottom: 0
+
+    @media(min-width: $sm)
+      display: block
+
+    a
+      color: $text-color
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        color: $main-color
+
+  &__address
+    display: none
+
+    @media(min-width: $sm)
+      display: block
+
+.main-menu
+  bottom: 0
+  background-color: #fff
+  display: none
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 9
+
+  @media(min-width: 1350px)
+    padding-left: 42.55208%
+
+  &::before
+    @media(min-width: 1350px)
+      background-image: url('../images/backgrounds/menu.jpg')
+      background-repeat: no-repeat
+      background-position: 0 50%
+      background-size: cover
+      content: ''
+      height: 100%
+      left: 0
+      position: absolute
+      top: 0
+      width: 42.55208%
+      z-index: 1
+
+  &__inner
+    display: flex
+    flex-direction: column
+    height: 100%
+    overflow-y: auto
+    padding-left: 30px
+    padding-right: 30px
+    padding-top: 110px
+    padding-bottom: 30px
+
+    @media(min-width: $sm)
+      padding-top: 145px
+      padding-left: 40px
+      padding-right: 40px
+      padding-bottom: 60px
+
+    @media(min-width: 1350px)
+      padding-left: 140px
+
+    @media(min-width: $lg)
+      padding-bottom: 80px
+
+  &__nav
+    margin-top: auto
+    margin-bottom: auto
+
+  &__list
+    font-size: 22px
+    font-weight: 700
+    line-height: 1.37
+    list-style: none
+    letter-spacing: 0
+    margin: 0
+    padding: 0
+
+    @media(min-width: $sm)
+      font-size: 30px
+      line-height: 1.5
+
+  &__list-item
+    &:not(:last-child)
+      margin-bottom: 25px
+
+      @media(min-width: $sm)
+        margin-bottom: 30px
+
+  &__link
+    color: $text-color
+    position: relative
+    text-decoration: none
+    transition: color 0.3s
+
+    &::after
+      background-color: $selection-color
+      bottom: -2px
+      content: ''
+      height: 0
+      left: 0
+      position: absolute
+      top: auto
+      transition: height 0.3s
+      width: 100%
+      z-index: -1
+
+    &:active,
+    &.is-active
+      color: $main-color
+
+      &::after
+        height: 15px

@@ -1,0 +1,47 @@
+.contacts
+  @media(min-width: $sm)
+    margin-bottom: 65px
+
+  @media(min-width: $lg)
+    margin-bottom: 35px
+    
+  &__city
+    font-size: 20px
+    font-weight: 700
+    line-height: 1.5
+    letter-spacing: 0
+    margin-bottom: 15px
+
+    @media(min-width: $sm)
+      font-size: 30px
+      margin-bottom: 30px
+
+  &__info
+    margin-bottom: 30px
+
+    @media(min-width: $sm)
+      display: flex
+      margin-bottom: 60px
+
+    p
+      &:not(:last-child)
+        margin-right: 50px
+
+        @media(min-width: $sm)
+          margin-bottom: 0
+
+  &__phone
+    a
+      color: $text-color
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        color: $main-color
+
+  &__map
+    background-color: $border-color
+    height: 200px
+
+    @media(min-width: $sm)
+      height: 450px
