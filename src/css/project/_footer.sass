@@ -18,7 +18,10 @@
 
     &:hover,
     &:focus
-      color: $main-color
+      color: $main-color-hover
+
+    &:active
+      cursor: $main-color
 
   &__inner
     margin-left: auto
@@ -43,13 +46,16 @@
 
     @media(min-width: $sm)
       margin-bottom: 0
-      padding-right: 40px
+      min-width: 215px
+      width: 215px
 
     @media (min-width: $lg)
-      padding-right: 80px
+      min-width: 405px
+      width: 405px
 
   &__left
     flex-grow: 1
+    width: 100%
 
   &__mail-block,
   &__phone-block

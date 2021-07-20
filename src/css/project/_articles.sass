@@ -1,0 +1,93 @@
+.articles
+  &:not(:last-child)
+    margin-bottom: 40px
+
+    @media(min-width: $sm)
+      margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+  &__list
+    @media(min-width: 1024px)
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+
+  &__item
+    margin-bottom: 40px
+
+    @media(min-width: $sm)
+      margin-bottom: 60px
+
+    @media(min-width: 1024px)
+      margin-bottom: 100px
+      width: 51.5625%
+
+    &:nth-child(4n+2),
+    &:nth-child(4n+3)
+      @media(min-width: 1024px)
+        width: 39.84375%
+
+    &:nth-child(4n+2)
+      @media(min-width: 1024px)
+        margin-top: 200px
+
+      @media(min-width: $lg)
+        margin-top: 260px
+
+    &:nth-child(4n+3)
+      @media(min-width: 1024px)
+        margin-top: -100px
+
+      @media(min-width: $lg)
+        margin-top: -130px
+
+.article
+  &__link
+    color: $text-color
+    display: block
+    margin-bottom: 10px
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      color: $text-color
+      text-decoration: underline
+
+      img
+        transform: scale(1.02)
+
+    picture,
+    img
+      display: block
+      width: 100%
+
+    picture
+      margin-bottom: 20px
+      overflow: hidden
+
+      @media(min-width: $sm)
+        margin-bottom: 30px
+
+    img
+      transform: scale(1)
+      transition: transform 0.3s
+
+  &__title
+    font-size: 20px
+    line-height: 1.5
+    letter-spacing: 0
+    margin: 0
+
+    @media(min-width: $sm)
+      font-size: 30px
+
+  &__preview-text
+    color: #717171
+
+    @media(min-width: $sm)
+      font-size: 16px
+      line-height: 1.5
+      letter-spacing: 0.48px
+      max-width: 80%

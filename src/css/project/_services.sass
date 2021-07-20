@@ -1,0 +1,130 @@
+.services
+  padding-top: 40px
+  padding-bottom: 40px
+
+  @media(min-width: $sm)
+    padding-top: 80px
+    padding-bottom: 80px
+
+  @media(min-width: $lg)
+    padding-top: 120px
+    padding-bottom: 120px
+
+  h2
+    margin-bottom: 30px
+    margin-top: 0
+
+    @media(min-width: $sm)
+      margin-bottom: 60px
+
+    @media(min-width: $lg)
+      margin-bottom: 85px
+
+.service
+  border-bottom: 1px solid $border-color
+  padding-top: 20px
+  padding-bottom: 20px
+
+  @media(min-width: $sm)
+    padding-top: 40px
+    padding-bottom: 40px
+
+  &:first-child
+    border-top: 1px solid $border-color
+
+  &__inner
+    @media(min-width: $lg)
+      display: flex
+
+  &__title-block
+    @media(min-width: $lg)
+      width: 50%
+
+  &__title
+    cursor: pointer
+    font-size: 20px
+    line-height: 1.5
+    margin: 0
+    padding-left: 35px
+    position: relative
+    transition: color 0.3s
+
+    @media(min-width: $sm)
+      font-size: 30px
+      padding-left: 75px
+
+    @media(min-width: $lg)
+      padding-left: 105px
+      padding-right: 40px
+
+    &:hover,
+    &:focus,
+    &.is-active
+      color: $main-color
+
+    &:active,
+    &.is-active
+      .service__title-text
+        &::after
+          height: 12px
+
+          @media(min-width: $sm)
+            height: 20px
+
+  &__title-text
+    position: relative
+
+    &::after
+      background-color: $selection-color
+      bottom: 0
+      content: ''
+      height: 0
+      left: 0
+      position: absolute
+      top: auto
+      transition: height 0.3s
+      width: 100%
+      z-index: -1
+
+  &__num
+    color: $main-color
+    font-size: 16px
+    font-weight: 400
+    line-height: 1.6
+    letter-spacing: 0.48px
+    left: 0
+    position: absolute
+    top: 2px
+    z-index: 1
+
+    @media(min-width: $sm)
+      top: 8px
+
+  &__text-block
+    display: none
+    font-size: 18px
+    line-height: 1.7
+    letter-spacing: 0.54px
+    padding-top: 20px
+    padding-bottom: 10px
+
+    @media(min-width: $sm)
+      font-size: 20px
+      letter-spacing: 0.6px
+      padding-left: 75px
+      padding-top: 40px
+      padding-bottom: 0
+
+    @media(min-width: $lg)
+      padding: 0
+      width: 50%
+
+    p
+      &:not(:last-child)
+        margin-bottom: 15px
+
+        @media(min-width: $sm)
+          margin-bottom: 40px
+
+    .button
+      min-width: 260px
