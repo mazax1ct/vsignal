@@ -1,0 +1,137 @@
+.article-detail
+  &__text
+    max-width: 660px
+
+    &:not(:last-child)
+      margin-bottom: 40px
+
+      @media(min-width: $sm)
+        margin-bottom: 60px
+
+      @media(min-width: $lg)
+        margin-bottom: 80px
+
+  &__logo-block
+    margin-bottom: 30px
+
+    @media(min-width: $sm)
+      margin-bottom: 40px
+
+    @media(min-width: 1200px)
+      align-items: flex-end
+      display: flex
+      justify-content: space-between
+      margin-bottom: 60px
+
+    .article-detail__text
+      margin-bottom: 30px
+
+      @media(min-width: $sm)
+        margin-bottom: 60px
+
+      @media(min-width: 1200px)
+        margin-bottom: 0
+
+  &__link
+    margin-bottom: 20px
+
+    @media(min-width: $sm)
+      margin-bottom: 40px
+
+    @media(min-width: $lg)
+      margin-bottom: 60px
+
+  &__banner
+    &:not(:last-child)
+      margin-bottom: 60px
+
+      @media(min-width: $sm)
+        margin-bottom: 80px
+
+      @media(min-width: $lg)
+        margin-bottom: 120px
+
+    & + .article-detail__nav-block
+      @media(min-width: $lg)
+        margin-top: -40px
+
+    picture,
+    img
+      display: block
+      width: 100%
+
+  &__design
+    margin-bottom: 60px
+
+    @media(min-width: $sm)
+      align-items: flex-start
+      display: flex
+      justify-content: space-between
+      margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+    picture,
+    img
+      display: block
+      width: 100%
+
+  &__design-item
+    &:first-child
+      margin-bottom: 20px
+
+      @media(min-width: $sm)
+        margin-bottom: 0
+        width: 74.21875%
+
+    &:last-child
+      @media(min-width: $sm)
+        width: 17.1875%
+
+  &__nav-block
+    &--next
+      text-align: right
+
+  &__nav-link
+    align-items: center
+    display: inline-flex
+    font-size: 20px
+    font-weight: 700
+    vertical-align: top
+    text-decoration: none
+
+    @media(min-width: $sm)
+      font-size: 24px
+
+    &:hover,
+    &:focus
+      svg
+        fill: $main-color-hover
+
+    svg
+      fill: $main-color
+      height: 25px
+      margin-top: 2px
+      transition: fill 0.3s
+      width: 38px
+
+      &:first-child
+        margin-right: 10px
+
+      &:last-child
+        margin-left: 10px
+
+.brand-colors
+  display: flex
+  margin-bottom: 30px
+
+  @media(min-width: $lg)
+    margin-bottom: 60px
+
+  &__item
+    flex-grow: 1
+    height: 10px
+
+    @media(min-width: $lg)
+      height: 20px

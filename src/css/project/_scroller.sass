@@ -1,0 +1,46 @@
+.scroller
+  display: flex
+  cursor: grab
+  overflow: auto
+  user-select: none
+  scrollbar-width: thin
+  scrollbar-color: $brand-color $selection-color
+
+  &::-webkit-scrollbar
+    height: 6px
+    width: 6px
+
+  &::-webkit-scrollbar-track
+    background-color: $selection-color
+
+  &::-webkit-scrollbar-thumb
+    background: $brand-color
+    width: 6px
+
+  &.active
+    cursor: grabbing
+    cursor: -webkit-grabbing
+
+  &__item
+    min-width: 200px
+    width: 200px
+    user-select: none
+
+    @media(min-width: $sm)
+      min-width: 300px
+      width: 300px
+
+    @media(min-width: $lg)
+      min-width: 400px
+      width: 400px
+
+    &:not(:last-child)
+      margin-right: 30px
+
+      @media(min-width: $lg)
+        margin-right: 40px
+
+    img
+      pointer-events: none
+      user-drag: none
+      user-select: none
