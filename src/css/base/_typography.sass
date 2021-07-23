@@ -48,8 +48,8 @@ h1,.h1
 h2,.h2
   font-size: 26px
   line-height: 1.4
-  margin-top: 30px
   margin-bottom: 20px
+  margin-top: 0
 
   @media(min-width: $sm)
     font-size: 52px
@@ -58,17 +58,41 @@ h2,.h2
   @media(min-width: $lg)
     font-size: 64px
 
-h3,.h3,
-h4,.h4,
-h5,.h5,
-h6,.h6,
+  &:not(:first-child)
+    margin-top: 30px
+
+h3,.h3
   font-size: 20px
   line-height: 1.4
-  margin-top: 30px
+  margin-top: 0
   margin-bottom: 20px
 
   @media(min-width: $sm)
     font-size: 30px
+
+  &:not(:first-child)
+    margin-top: 30px
+
+h4,.h4,
+h5,.h5,
+h6,.h6,
+  font-size: 18px
+  line-height: 1.38888
+  margin-top: 0
+  margin-bottom: 15px
+
+  @media(min-width: $sm)
+    font-size: 24px
+    margin-bottom: 20px
+
+  @media(min-width: $lg)
+    margin-bottom: 30px
+
+  &:not(:first-child)
+    margin-top: 20px
+
+    @media(min-width: $sm)
+      margin-bottom: 30px
 
 ul,
 ol
@@ -152,7 +176,6 @@ img
 .link
   align-items: center
   display: inline-flex
-  position: relative
   vertical-align: top
 
   &::before
@@ -170,25 +193,25 @@ img
       height: 18px
       width: 18px
 
-  &::after
-    background-color: $selection-color
-    bottom: 1px
-    content: ''
-    height: 0
-    left: 0
-    position: absolute
-    top: auto
-    transition: height 0.3s
-    width: 100%
-    z-index: -1
+  span
+    position: relative
 
-  &:hover,
-  &:focus
-    text-decoration: none
+    &::after
+      background-color: $selection-color
+      bottom: 1px
+      content: ''
+      height: 0
+      left: 0
+      position: absolute
+      top: auto
+      transition: height 0.3s
+      width: 100%
+      z-index: -1
 
   &:active
-    &::after
-      height: 12px
+    span
+      &::after
+        height: 12px
 
-      @media(min-width: $sm)
-        height: 15px
+        @media(min-width: $sm)
+          height: 15px

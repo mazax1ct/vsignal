@@ -64,3 +64,97 @@ body
 
     @media(min-width: $lg)
       margin-bottom: 80px
+
+.cols-3
+  @media(min-width: $lg)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -20px
+    margin-right: -20px
+
+  &:not(:last-child)
+    margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+  .col
+    @media(min-width: $lg)
+      margin-bottom: 50px
+      padding-left: 20px
+      padding-right: 20px
+      width: 33.33333%
+
+    &:not(:last-child)
+      margin-bottom: 40px
+
+      @media(min-width: $sm)
+        margin-bottom: 50px
+
+.cols-4
+  @media(min-width: $sm)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -20px
+    margin-right: -20px
+
+  &:not(:last-child)
+    margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+  .col
+    @media(min-width: $sm)
+      margin-bottom: 40px
+      padding-left: 20px
+      padding-right: 20px
+      width: 50%
+
+    @media(min-width: $lg)
+      margin-bottom: 50px
+      padding-left: 20px
+      padding-right: 20px
+      width: 25%
+
+    &:not(:last-child)
+      margin-bottom: 40px
+
+h2,.h2
+  & + .cols-3,
+  & + .cols-4
+    @media(min-width: $lg)
+      margin-top: 80px
+
+.imaged-block
+  @media(min-width: 1024px)
+    display: flex
+    flex-direction: row-reverse
+    justify-content: space-between
+
+  &:not(:last-child)
+    margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+  &__text-block
+    margin-bottom: 30px
+
+    @media(min-width: $sm)
+      margin-bottom: 50px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+      width: 48.4375%
+
+  &__image
+    @media(min-width: 1024px)
+      width: 42.96875%
+
+    picture,
+    img
+      display: block
+      margin-left: auto
+      margin-right: auto
+      width: 100%

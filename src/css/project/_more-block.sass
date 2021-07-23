@@ -6,7 +6,28 @@
     font-size: 20px
     font-weight: 700
     line-height: 1.35
+    position: relative
     text-decoration: none
 
     @media(min-width: $sm)
       font-size: 24px
+
+    &:active,
+    &.is-active
+      &::after
+        height: 12px
+
+        @media(min-width: $sm)
+          height: 15px
+
+    &::after
+      background-color: $selection-color
+      bottom: 0
+      content: ''
+      height: 0
+      left: 0
+      position: absolute
+      top: auto
+      transition: height 0.3s
+      width: 100%
+      z-index: -1

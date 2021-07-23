@@ -1,0 +1,16 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M51.9463 12H66.0003V26.7568H62.7994V15.361H51.9463V12Z" fill="#0034FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64.5946 16.2681L45.7198 34.9457C44.7259 35.9293 43.1144 35.9293 42.1205 34.9457L33.7251 26.638C33.2282 26.1463 32.4224 26.1463 31.9255 26.638L16.183 42.216L14 40.0558L31.0257 23.208C32.0196 22.2245 33.631 22.2245 34.6249 23.208L43.0203 31.5157C43.5173 32.0075 44.323 32.0075 44.82 31.5157L62.4116 14.1079L64.5946 16.2681Z" fill="#0034FF"/>
+<mask id="path-3-inside-1" fill="white">
+<rect x="14" y="52.7568" width="12.6486" height="14.7568" rx="2"/>
+</mask>
+<rect x="14" y="52.7568" width="12.6486" height="14.7568" rx="2" stroke="#0034FF" stroke-width="6" mask="url(#path-3-inside-1)"/>
+<mask id="path-4-inside-2" fill="white">
+<rect x="33.6758" y="43.6216" width="12.6486" height="23.8919" rx="2"/>
+</mask>
+<rect x="33.6758" y="43.6216" width="12.6486" height="23.8919" rx="2" stroke="#0034FF" stroke-width="6" mask="url(#path-4-inside-2)"/>
+<mask id="path-5-inside-3" fill="white">
+<rect x="53.3516" y="38" width="12.6486" height="29.5135" rx="2"/>
+</mask>
+<rect x="53.3516" y="38" width="12.6486" height="29.5135" rx="2" stroke="#0034FF" stroke-width="6" mask="url(#path-5-inside-3)"/>
+</svg>

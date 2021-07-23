@@ -1,0 +1,34 @@
+.feature
+  @media(min-width: $sm) and (max-width: $lg - 1)
+    display: flex
+
+  &__image
+    margin-bottom: 20px
+    width: 60px
+
+    @media(min-width: $sm)
+      min-width: 80px
+      width: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 40px
+
+  &__text-block
+    @media(min-width: $sm) and (max-width: $lg - 1)
+      padding-left: 40px
+
+  h3
+    @media(min-width: $sm) and (max-width: $lg - 1)
+      margin-top: 0
+
+.feature_2
+  &__image
+    margin-bottom: 20px
+    width: 60px
+
+    @media(min-width: $sm)
+      min-width: 80px
+      width: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 40px

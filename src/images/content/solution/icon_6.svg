@@ -1,0 +1,13 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1" fill="white">
+<rect x="7" y="11" width="66" height="57.5745" rx="2"/>
+</mask>
+<rect x="7" y="11" width="66" height="57.5745" rx="2" stroke="#0034FF" stroke-width="6" mask="url(#path-1-inside-1)"/>
+<line x1="7" y1="20.0303" x2="73" y2="20.0303" stroke="#0034FF" stroke-width="3"/>
+<rect x="11.7109" y="15.7104" width="1.10638" height="1.10638" fill="#0034FF" stroke="#0034FF"/>
+<rect x="15.9268" y="15.7104" width="1.10638" height="1.10638" fill="#0034FF" stroke="#0034FF"/>
+<rect x="20.1396" y="15.7104" width="1.10638" height="1.10638" fill="#0034FF" stroke="#0034FF"/>
+<path d="M27.7088 50.9276L21.4854 44.7569L27.7088 38.5861L29.6536 40.5016L25.2194 44.7569L29.6536 49.0121L27.7088 50.9276Z" fill="#0034FF"/>
+<path d="M40.9256 34.3438L35.9469 52.856H39.0845L44.0632 34.3438H40.9256Z" fill="#0034FF"/>
+<path d="M52.2864 50.9276L58.5098 44.7569L52.2864 38.5861L50.3415 40.5016L54.7757 44.7569L50.3415 49.0121L52.2864 50.9276Z" fill="#0034FF"/>
+</svg>
