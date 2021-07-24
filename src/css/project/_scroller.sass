@@ -1,46 +1,44 @@
-.scroller
-  display: flex
-  cursor: grab
-  overflow: auto
-  user-select: none
-  scrollbar-width: thin
-  scrollbar-color: $brand-color $selection-color
-
-  &::-webkit-scrollbar
-    height: 6px
-    width: 6px
-
-  &::-webkit-scrollbar-track
-    background-color: $selection-color
-
-  &::-webkit-scrollbar-thumb
-    background: $brand-color
-    width: 6px
-
-  &.active
-    cursor: grabbing
-    cursor: -webkit-grabbing
-
-  &__item
-    min-width: 200px
-    width: 200px
-    user-select: none
+h2,.h2
+  & + .scroller
+    margin-top: 40px
 
     @media(min-width: $sm)
-      min-width: 300px
-      width: 300px
+      margin-top: 60px
 
     @media(min-width: $lg)
-      min-width: 400px
+      margin-top: 80px
+
+.scroller
+  margin-left: -30px
+  margin-right: -30px
+
+  @media(min-width: $sm)
+    margin-left: -40px
+    margin-right: -40px
+
+  @media(min-width: $lg)
+    margin-left: -80px
+    margin-right: -80px
+
+  @media(min-width: 1600px)
+    left: 50%
+    margin-left: 0
+    margin-right: 0
+    position: relative
+    transform: translateX(-50%)
+    width: 100vw
+
+  &:not(:last-child)
+    margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+  .swiper-slide
+    width: 260px
+
+    @media(min-width: $sm)
+      width: 325px
+
+    @media(min-width: $lg)
       width: 400px
-
-    &:not(:last-child)
-      margin-right: 30px
-
-      @media(min-width: $lg)
-        margin-right: 40px
-
-    img
-      pointer-events: none
-      user-drag: none
-      user-select: none

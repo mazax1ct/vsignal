@@ -53,7 +53,7 @@ body
     padding-left: 80px
     padding-right: 80px
 
-.text-block
+.text-block-730
   max-width: 730px
 
   &:not(:last-child)
@@ -64,6 +64,83 @@ body
 
     @media(min-width: $lg)
       margin-bottom: 80px
+
+.text-block-660
+  max-width: 660px
+
+  &:not(:last-child)
+    margin-bottom: 40px
+
+    @media(min-width: $sm)
+      margin-bottom: 60px
+
+    @media(min-width: $lg)
+      margin-bottom: 80px
+
+.page-banner
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: $sm)
+      margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+  & + .article-detail__nav-block
+    @media(min-width: $lg)
+      margin-top: -40px
+
+  picture,
+  img
+    display: block
+    width: 100%
+
+.designs
+  &:not(:last-child)
+    margin-bottom: 60px
+
+    @media(min-width: $sm)
+      margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+  @media(min-width: $sm)
+    align-items: flex-start
+    display: flex
+    justify-content: space-between
+
+  picture,
+  img
+    display: block
+    width: 100%
+
+  &__item
+    &:first-child
+      margin-bottom: 20px
+
+      @media(min-width: $sm)
+        margin-bottom: 0
+        width: 74.21875%
+
+    &:last-child
+      @media(min-width: $sm)
+        width: 17.1875%
+
+.brand-colors
+  display: flex
+  margin-bottom: 30px
+
+  @media(min-width: $lg)
+    margin-bottom: 60px
+
+  &__item
+    flex-grow: 1
+    height: 10px
+
+    @media(min-width: $lg)
+      height: 20px
 
 .cols-3
   @media(min-width: $lg)
@@ -158,3 +235,54 @@ h2,.h2
       margin-left: auto
       margin-right: auto
       width: 100%
+
+.infographics
+  display: flex
+  flex-wrap: wrap
+  font-size: 14px
+  line-height: 1.6
+  letter-spacing: 0.42px
+  margin-left: -20px
+  margin-right: -20px
+  margin-bottom: 10px
+
+  @media(min-width: $sm)
+    font-size: 16px
+    letter-spacing: 0.48px
+    margin-bottom: 30px
+
+  @media(min-width: $lg)
+    font-size: 20px
+    line-height: 1.7
+    margin-bottom: 50px
+
+  &__item
+    margin-bottom: 30px
+    padding-left: 20px
+    padding-right: 20px
+    text-align: center
+    width: 50%
+
+    @media(min-width: $sm)
+      width: 25%
+
+  &__title
+    color: $main-color
+    font-size: 34px
+    font-weight: 700
+    line-height: 1.4
+    letter-spacing: 0
+    margin-bottom: 10px
+
+    @media(min-width: $sm)
+      font-size: 44px
+      margin-bottom: 15px
+
+    @media(min-width: $lg)
+      font-size: 64px
+
+.page-banner + .about-sign
+  margin-top: -20px
+  
+  @media(min-width: $lg)
+    margin-top: -60px

@@ -1,26 +1,52 @@
-const slider = document.querySelector(".js-scroller");
-let isDown = false;
-let startX;
-let scrollLeft;
+let scrollerSideOffset = 80;
+var scroller;
 
-slider.addEventListener("mousedown", e => {
-  isDown = true;
-  slider.classList.add("active");
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
+$(document).ready(function() {
+    if ($('body').width() >= 1600) {
+        scrollerSideOffset = (window.innerWidth - 1600) / 2 + 80;
+    }
+
+    scroller = new Swiper('.js-scroller', {
+        loop: false,
+        freeMode: true,
+        grabCursor: true,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        slidesOffsetAfter: 30,
+        slidesOffsetBefore: 30,
+        watchOverflow: true,
+
+        scrollbar: {
+            el: '.js-scroller .swiper-scrollbar',
+        },
+
+        breakpoints: {
+            768: {
+                spaceBetween: 30,
+                slidesOffsetAfter: 40,
+                slidesOffsetBefore: 40
+            },
+            1400: {
+                spaceBetween: 40,
+                slidesOffsetAfter: 80,
+                slidesOffsetBefore: 80
+            },
+            1600: {
+                spaceBetween: 40,
+                slidesOffsetAfter: scrollerSideOffset,
+                slidesOffsetBefore: scrollerSideOffset
+            }
+        }
+    });
 });
-slider.addEventListener("mouseleave", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-slider.addEventListener("mouseup", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-slider.addEventListener("mousemove", e => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = x - startX;
-  slider.scrollLeft = scrollLeft - walk;
+
+$(window).on("resize", function() {
+    if ($('body').width() >= 1600) {
+        scrollerSideOffset = (window.innerWidth - 1600) / 2 + 80;
+        scroller.params.slidesOffsetAfter = scrollerSideOffset;
+        scroller.params.slidesOffsetBefore = scrollerSideOffset;
+        setTimeout(function() {
+            scroller.update();
+        }, 100);
+    }
 });

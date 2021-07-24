@@ -1,13 +1,21 @@
+.cases-block
+  &:not(:last-child)
+    margin-bottom: 40px
+
+    @media(min-width: $sm)
+      margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
 .cases-list
   display: flex
-  margin-bottom: 40px
   margin-left: -30px
   margin-right: -30px
   padding-left: 30px
   overflow-x: auto
 
   @media(min-width: $sm)
-    margin-bottom: 80px
     margin-left: -40px
     margin-right: -40px
     padding-left: 40px
@@ -16,9 +24,6 @@
     margin-left: -20px
     margin-right: -20px
     padding-left: 0
-
-  @media(min-width: $lg)
-    margin-bottom: 120px
 
   &__item
     margin-right: 20px
@@ -67,6 +72,7 @@ h2,.h2
       width: 100%
 
     picture
+      display: block
       margin-bottom: 20px
       overflow: hidden
 

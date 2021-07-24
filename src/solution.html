@@ -30,14 +30,14 @@
 
     <div class="page-content">
         <div class="container">
-            <div class="article-detail">
+            <section class="article-detail">
                 <h1>Медицинские услуги</h1>
 
-                <div class="article-detail__text">
+                <div class="text-block-660">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
-                <div class="article-detail__banner">
+                <div class="page-banner">
                     <picture>
                         <source srcset="images/content/solution/banner_desk.jpg, images/content/solution/banner_desk@2x.jpg 2x" media="(min-width: 1024px)">
                         <source srcset="images/content/solution/banner_tablet.jpg, images/content/solution/banner_tablet@2x.jpg 2x" media="(min-width: 768px)">
@@ -146,7 +146,7 @@
                     </div>
                 </div>
 
-                <p class="article-detail__nav-block article-detail__nav-block--next">
+                <p class="article-detail__nav-block next">
                     <a class="article-detail__nav-link" href="#">
                         <span>Следующее решение</span>
                         <svg>
@@ -154,43 +154,46 @@
                         </svg>
                     </a>
                 </p>
-            </div>
+            </section>
 
-            <h2>Наши кейсы</h2>
-
-            <div class="cases-list">
-                <div class="cases-list__item">
-                    <article class="case">
-                        <a class="case__link" href="case.html">
-                            <picture>
-                                <img src="images/content/solution/case_1.jpg" srcset="images/content/solution/case_1@2x.jpg 2x" alt="alt">
-                            </picture>
-                            <h2 class="case__title">Gold Union House</h2>
-                        </a>
-                        <p class="case__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), интеграция сайта с 1С, комплексная маркетинговая поддержка</p>
-                    </article>
+            <section class="cases-block">
+                <h2>Наши кейсы</h2>
+                <div class="cases-list">
+                    <div class="cases-list__item">
+                        <article class="case">
+                            <a class="case__link" href="case.html">
+                                <picture>
+                                    <img src="images/content/solution/case_1.jpg" srcset="images/content/solution/case_1@2x.jpg 2x" alt="alt">
+                                </picture>
+                                <h2 class="case__title">Gold Union House</h2>
+                            </a>
+                            <p class="case__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), интеграция сайта с 1С, комплексная маркетинговая поддержка</p>
+                        </article>
+                    </div>
+                    <div class="cases-list__item">
+                        <article class="case">
+                            <a class="case__link" href="case.html">
+                                <picture>
+                                    <img src="images/content/solution/case_2.jpg" srcset="images/content/solution/case_2@2x.jpg 2x" alt="alt">
+                                </picture>
+                                <h2 class="case__title">ДвериШоп</h2>
+                            </a>
+                            <p class="case__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), комплексная маркетинговая поддержка</p>
+                        </article>
+                    </div>
+                    <div class="cases-list__item">
+                        <article class="case">
+                            <a class="case__link" href="case.html">
+                                <picture>
+                                    <img src="images/content/solution/case_3.jpg" srcset="images/content/solution/case_3@2x.jpg 2x" alt="alt">
+                                </picture>
+                                <h2 class="case__title">Decorum</h2>
+                            </a>
+                            <p class="case__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), интеграция сайта с 1С и CRM Bitrix 24, комплексная маркетинговая поддержка</p>
+                        </article>
+                    </div>
                 </div>
-                <div class="cases-list__item">
-                    <article class="case">
-                        <a class="case__link" href="case.html">
-                            <picture>
-                                <img src="images/content/solution/case_2.jpg" srcset="images/content/solution/case_2@2x.jpg 2x" alt="alt">
-                            </picture>
-                            <h2 class="case__title">ДвериШоп</h2>
-                        </a>
-                        <p class="case__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), комплексная маркетинговая поддержка</p>
-                    </article>
-                </div>
-                <div class="cases-list__item">
-                    <article class="case">
-                        <a class="case__link" href="case.html">
-                            <img src="images/content/solution/case_3.jpg" srcset="images/content/solution/case_3@2x.jpg 2x" alt="alt">
-                            <h2 class="case__title">Decorum</h2>
-                        </a>
-                        <p class="case__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), интеграция сайта с 1С и CRM Bitrix 24, комплексная маркетинговая поддержка</p>
-                    </article>
-                </div>
-            </div>
+            </section>
 
             //= template/feedback-form.html
         </div>
