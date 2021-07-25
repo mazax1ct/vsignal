@@ -1,0 +1,166 @@
+h2,.h2
+  & + .tarifs
+    margin-top: 40px
+
+    @media(min-width: $sm)
+      margin-top: 60px
+
+    @media(min-width: $lg)
+      margin-top: 80px
+
+.tarifs
+  &:not(:last-child)
+    margin-bottom: 40px
+
+    @media(min-width: $sm)
+      margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+  @media(min-width: $lg)
+    display: flex
+    margin-left: -20px
+    margin-right: -20px
+
+  &__item
+    margin-bottom: 20px
+
+    @media(min-width: $sm)
+      margin-bottom: 40px
+
+    @media(min-width: $lg)
+      display: flex
+      padding-left: 20px
+      padding-right: 20px
+      width: 33.33333%
+
+.tarif
+  border: 1px solid $border-color
+  height: 100%
+  padding: 20px
+  transition: border-color 0.3s
+
+  @media(min-width: $sm)
+    display: flex
+    padding: 35px
+
+  @media(min-width: $lg)
+    flex-direction: column
+
+  &:hover
+    border-color: $main-color-hover
+
+    .button
+      background-color: $main-color
+      border-color: $main-color
+      color: #fff
+
+  &__icon
+    margin-bottom: 20px
+    width: 40px
+
+    @media(min-width: $sm)
+      min-width: 65px
+      margin-bottom: 0
+      width: 65px
+
+    @media(min-width: $lg)
+      margin-bottom: 20px
+
+  &__info
+    @media(min-width: $sm)
+      flex-grow: 1
+      padding-left: 45px
+
+    @media(min-width: $lg)
+      display: flex
+      flex-direction: column
+      padding-left: 0
+
+  &__title
+    color: $main-color
+    font-size: 20px
+    font-weight: 700
+    line-height: 1.5
+    letter-spacing: 0
+    margin-bottom: 20px
+
+    @media(min-width: $sm)
+      font-size: 30px
+      margin-bottom: 30px
+      padding-top: 15px
+
+    @media(min-width: $lg)
+      padding-top: 0
+
+  &__subtitle
+    color: #717171
+    font-size: 14px
+    line-height: 1.6
+    letter-spacing: 0.42px
+    margin-bottom: 10px
+
+    @media(min-width: $sm)
+      font-size: 16px
+      letter-spacing: 0.48px
+      margin-bottom: 5px
+
+  &__goal
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.38888
+    letter-spacing: 0
+    margin-bottom: 20px
+
+    @media(min-width: $sm)
+      font-size: 20px
+      margin-bottom: 30px
+
+    @media(min-width: $lg)
+      margin-bottom: 20px
+
+  &__problems
+    font-size: 16px
+    line-height: 1.7
+    letter-spacing: 0.48px
+    margin-bottom: 15px
+
+    @media(min-width: $sm)
+      margin-bottom: 20px
+
+  &__order-block
+    border-top: 1px solid $border-color
+    margin-top: auto
+    padding-top: 15px
+
+    @media(min-width: $sm)
+      padding-top: 20px
+
+  &__price
+    font-size: 20px
+    font-weight: 700
+    margin-bottom: 30px
+
+    @media(min-width: $sm)
+      font-size: 30px
+
+    small
+      font-size: 16px
+      font-weight: 400
+
+      @media(min-width: $sm)
+        font-size: 18px
+
+  &__button-block
+    text-align: center
+
+    @media(min-width: $sm)
+      text-align: left
+
+    @media(min-width: $lg)
+      text-align: center
+
+    .button
+      max-width: 280px
+      width: 100%

@@ -1,0 +1,77 @@
+.advice-banner
+  margin-bottom: 80px
+
+  @media(min-width: 1024px)
+    align-items: center
+    display: flex
+    justify-content: space-between
+    position: relative
+
+  @media(min-width: $lg)
+    margin-bottom: 120px
+
+  &__text-block
+    margin-bottom: 20px
+
+    @media(min-width: $sm)
+      margin-bottom: 50px
+
+    @media(min-width: 1024px)
+      margin-bottom: 0
+
+  &__text
+    max-width: 510px
+    margin-bottom: 30px
+
+    @media(min-width: $sm)
+      margin-bottom: 40px
+
+  .button
+    max-width: 260px
+    width: 100%
+
+  &__image
+    position: relative
+
+    @media(min-width: 1024px)
+      position: static
+      width: 48.4375%
+
+    picture,
+    img
+      display: block
+      width: 100%
+
+    picture
+      margin-left: auto
+      margin-right: auto
+      max-width: 560px
+
+      @media(min-width: $sm)
+        margin-right: 0
+
+      @media(min-width: 1024px)
+        max-width: 100%
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 52'%3E%3Cg%3E%3Crect fill='%23D5E0E9' x='7.5' y='0.4' class='st0' width='2' height='50'/%3E%3Cpolygon fill='%23D5E0E9' points='8.5,51.6 0.5,43.6 1.9,42.2 8.5,48.8 15.1,42.2 16.5,43.6'/%3E%3C/g%3E%3C/svg%3E%0A")
+      background-position: 0 0
+      background-size: 10px 34px
+      content: ''
+      height: 34px
+      left: 0
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 10px
+
+      @media(min-width: $sm)
+        background-size: 15px 50px
+        height: 50px
+        transform: none
+        top: 70%
+        width: 15px
+
+      @media(min-width: 1024px)
+        bottom: 0
+        top: auto

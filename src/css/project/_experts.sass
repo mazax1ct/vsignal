@@ -1,0 +1,54 @@
+h2,.h2
+  & + .experts
+    margin-top: 40px
+
+    @media(min-width: $sm)
+      margin-top: 60px
+
+    @media(min-width: $lg)
+      margin-top: 80px
+
+.experts
+  &:not(:last-child)
+    margin-bottom: 80px
+
+    @media(min-width: $sm)
+      margin-bottom: 80px
+
+  @media(min-width: $sm)
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-left: -20px
+    margin-right: -20px
+
+  &__item
+    margin-bottom: 40px
+
+    @media(min-width: $sm)
+      padding-left: 20px
+      padding-right: 20px
+
+    @media(min-width: $lg)
+      padding-left: 50px
+      padding-right: 50px
+
+  .person
+    font-size: 14px
+    line-height: 1.6
+    letter-spacing: 0.42px
+    margin-left: auto
+    margin-right: auto
+
+    @media(min-width: $sm)
+      font-size: 16px
+      line-height: 1.6
+      letter-spacing: 0.48px
+
+    @media(min-width: $lg)
+      width: 440px
+
+  .person__info
+    @media(min-width: $lg)
+      padding-left: 30px
+      padding-right: 30px

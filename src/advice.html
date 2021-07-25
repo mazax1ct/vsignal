@@ -30,7 +30,20 @@
 
     <div class="page-content">
         <div class="container">
-            <h1>Нужен <span class="main-color">совет?</span></h1>
+            <div class="advice-banner">
+                <div class="advice-banner__text-block">
+                    <h1>Нужен&nbsp;<span class="main-color">совет?</span></h1>
+                    <p class="advice-banner__text">Мы поделимся нашим опытом, как решить ваши бизнес-задачи любой сложности</p>
+                    <p><a class="button button--type_1" href="#">Написать нам</a></p>
+                </div>
+                <div class="advice-banner__image">
+                    <picture>
+                        <source srcset="images/content/advice/banner.png, images/content/advice/banner@2x.png 2x" media="(min-width: 768px)">
+                        <img src="images/content/advice/banner_mob.png" srcset="images/content/advice/banner_mob@2x.png 2x" alt="alt">
+                    </picture>
+                </div>
+            </div>
+
 
             <div class="imaged-block">
                 <div class="imaged-block__text-block">
@@ -52,40 +65,33 @@
                 <div class="js-scroller swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="person">
-                                <picture class="person__image">
-                                    <img src="images/content/about/victor.jpg" srcset="images/content/about/victor@2x.jpg 2x" alt="Виктор">
-                                </picture>
-                                <h2 class="person__name">Виктор</h2>
-                                <p class="person__place">Руководитель компании</p>
-                                <p class="person__email"><a class="email-link" href="mailto:victor@vsignal.ru">victor@vsignal.ru</a></p>
+                            <div class="benefit">
+                                <h3 class="benefit__title">Запуск нового продукта</h3>
+                                <p>Проведем маркетинговый аудит вашего продукта и рынка. Определим кому, зачем и как мы будем коммуницировать о продукте.</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="person">
-                                <picture>
-                                    <img src="images/content/about/mihail.jpg" srcset="images/content/about/mihail@2x.jpg 2x" alt="Михаил">
-                                </picture>
-                                <h2 class="person__name">Михаил</h2>
-                                <p class="person__place">Digital-стратег</p>
+                            <div class="benefit">
+                                <h3 class="benefit__title">Выход на новый рынок</h3>
+                                <p>Поможем понять, как стратегически подойти к продвижению товара на новый рынок.</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="person">
-                                <picture>
-                                    <img src="images/content/about/sergey.jpg" srcset="images/content/about/sergey@2x.jpg 2x" alt="Сергей">
-                                </picture>
-                                <h2 class="person__name">Сергей</h2>
-                                <p class="person__place">IT-джедай</p>
+                            <div class="benefit">
+                                <h3 class="benefit__title">Проверка бизнес-идеи</h3>
+                                <p>Протестуем вашу бизнес-идею и оценим ее эффективность.</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="person">
-                                <picture>
-                                    <img src="images/content/about/janina.jpg" srcset="images/content/about/janina@2x.jpg 2x" alt="Янина">
-                                </picture>
-                                <h2 class="person__name">Янина</h2>
-                                <p class="person__place">Нежный SMM</p>
+                            <div class="benefit">
+                                <h3 class="benefit__title">Неопределенность</h3>
+                                <p>Посоветуем, как построить эффективный маркетинг или создать стратегию, нацеленную на бизнес-результат.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="benefit">
+                                <h3 class="benefit__title">Бизнес не развивается</h3>
+                                <p>Проведем диагностику вашего бизнеса. Выясним причины низкой динамики роста бизнеса.</p>
                             </div>
                         </div>
                     </div>
@@ -96,8 +102,10 @@
             <div class="imaged-block">
                 <div class="imaged-block__text-block">
                     <h2>Почему стоит довериться нам?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
                 </div>
                 <div class="imaged-block__image">
                     <img style="max-width: 334px" src="images/content/advice/img_2.svg" alt="alt">
@@ -106,14 +114,156 @@
 
             <h2 class="text-center">Кто наши эксперты?</h2>
 
+            <div class="experts">
+                <div class="experts__item">
+                    <div class="person">
+                        <picture class="person__image">
+                            <img src="images/content/about/victor.jpg" srcset="images/content/about/victor@2x.jpg 2x" alt="Виктор">
+                        </picture>
+                        <div class="person__info">
+                            <h2 class="person__name">Виктор</h2>
+                            <p class="person__place">Руководитель компании</p>
+                            <p class="person__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="person__email"><a class="email-link" href="mailto:victor@vsignal.ru">victor@vsignal.ru</a></p>
+                            <p class="person__socials">
+                                <a href="#" target="_blank">Instagram</a>
+                                <a href="#" target="_blank">Vkontakte</a>
+                                <a href="#" target="_blank">Facebook</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experts__item">
+                    <div class="person">
+                        <picture class="person__image">
+                            <img src="images/content/about/mihail.jpg" srcset="images/content/about/mihail@2x.jpg 2x" alt="Михаил">
+                        </picture>
+                        <div class="person__info">
+                            <h2 class="person__name">Михаил</h2>
+                            <p class="person__place">Digital-стратег</p>
+                            <p class="person__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="person__email"><a class="email-link" href="mailto:mihail@vsignal.ru">mihail@vsignal.ru</a></p>
+                            <p class="person__socials">
+                                <a href="#" target="_blank">Instagram</a>
+                                <a href="#" target="_blank">Vkontakte</a>
+                                <a href="#" target="_blank">Facebook</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <h2>Мы помогаем корпорациям, <span class="main-color">среднему</span>&nbsp;и&nbsp;<span class="main-color">малому</span> бизнесу</h2>
+
             <div class="text-block-660">
                 <p>Поработали с крупнейшими страховыми компаниями, банками, ритейл, автомобильными брендами, государственными проектами, eСommerce, СМИ и другими.</p>
             </div>
 
+            <div class="logos">
+                <img src="images/content/logos/abajjur.jpg" srcset="images/content/logos/abajjur@2x.jpg 2x" alt="alt">
+                <img src="images/content/logos/profildoors.jpg" srcset="images/content/logos/profildoors@2x.jpg 2x" alt="alt">
+                <img src="images/content/logos/dverishop-logo.jpg" srcset="images/content/logos/dverishop-logo@2x.jpg 2x" alt="alt">
+                <img src="images/content/logos/x-clinic-logo.jpg" srcset="images/content/logos/x-clinic-logo@2x.jpg 2x" alt="alt">
+                <img src="images/content/logos/decorum-logo.jpg" srcset="images/content/logos/decorum-logo@2x.jpg 2x" alt="alt">
+                <img src="images/content/logos/kaskad.jpg" srcset="images/content/logos/kaskad@2x.jpg 2x" alt="alt">
+                <img src="images/content/logos/forsite.jpg" srcset="images/content/logos/forsite@2x.jpg 2x" alt="alt">
+                <img src="images/content/logos/sport-olimp.jpg" srcset="images/content/logos/sport-olimp@2x.jpg 2x" alt="alt">
+                <img src="images/content/logos/sibir.jpg" srcset="images/content/logos/sibir@2x.jpg 2x" alt="alt">
+                <img src="images/content/logos/star.jpg" srcset="images/content/logos/star@2x.jpg 2x" alt="alt">
+                <img src="images/content/logos/primed.jpg" srcset="images/content/logos/primed@2x.jpg 2x" alt="alt">
+                <img src="images/content/logos/digital-razor.jpg" srcset="images/content/logos/digital-razor@2x.jpg 2x" alt="alt">
+            </div>
+
             <h2>Как это работает?</h2>
 
+            <div class="cols-3">
+                <div class="col">
+                    <div class="feature">
+                        <p class="feature__num">01</p>
+                        <div class="feature__text-block">
+                            <h3>Выход на новый рынок</h3>
+                            <p>Проведем диагностику вашего бизнеса. Выясним причины низкой динамики роста бизнеса.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feature">
+                        <p class="feature__num">02</p>
+                        <div class="feature__text-block">
+                            <h3>Выход на новый рынок</h3>
+                            <p>Проведем диагностику вашего бизнеса. Выясним причины низкой динамики роста бизнеса.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feature">
+                        <p class="feature__num">03</p>
+                        <div class="feature__text-block">
+                            <h3>Выход на новый рынок</h3>
+                            <p>Проведем диагностику вашего бизнеса. Выясним причины низкой динамики роста бизнеса.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <h2>Формат работы</h2>
+
+            <div class="tarifs">
+                <div class="tarifs__item">
+                    <div class="tarif">
+                        <div class="tarif__icon"><img src="images/icons/tarifs/tarif_1.svg" alt=""></div>
+                        <div class="tarif__info">
+                            <p class="tarif__title">Консультация</p>
+                            <p class="tarif__subtitle">Цель:</p>
+                            <p class="tarif__goal">Получить ответы на свои бизнес‑вопросы в Digital</p>
+                            <p class="tarif__problems">Какую CMS выбрать?<br> Как оценить эффективность в интернете?<br> Как связать офлайн и онлайн?</p>
+                            <div class="tarif__order-block">
+                                <p class="tarif__subtitle">Стоимость:</p>
+                                <p class="tarif__price">9 000 руб. <small>(до 3 часов)</small></p>
+                                <p class="tarif__button-block">
+                                    <a class="button button--type_2" href="#">Заказать услугу</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarifs__item">
+                    <div class="tarif">
+                        <div class="tarif__icon"><img src="images/icons/tarifs/tarif_2.svg" alt=""></div>
+                        <div class="tarif__info">
+                            <p class="tarif__title">Аудит</p>
+                            <p class="tarif__subtitle">Цель:</p>
+                            <p class="tarif__goal">Оценка текущего положения компании в Digital</p>
+                            <p class="tarif__problems">Где находимся мы и наши конкуренты?<br> Насколько эффективно мы работаем?<br> Что и где у нас не так?</p>
+                            <div class="tarif__order-block">
+                                <p class="tarif__subtitle">Стоимость:</p>
+                                <p class="tarif__price">от 50 000 руб.</p>
+                                <p class="tarif__button-block">
+                                    <a class="button button--type_2" href="#">Заказать услугу</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarifs__item">
+                    <div class="tarif">
+                        <div class="tarif__icon"><img src="images/icons/tarifs/tarif_3.svg" alt=""></div>
+                        <div class="tarif__info">
+                            <p class="tarif__title">Стратегия</p>
+                            <p class="tarif__subtitle">Цель:</p>
+                            <p class="tarif__goal">Разработка позиционирования компании в Digital</p>
+                            <p class="tarif__problems">Мы не знаем как развиваться в Digital?<br> Как отстроиться от своих конкурентов?</p>
+                            <div class="tarif__order-block">
+                                <p class="tarif__subtitle">Стоимость:</p>
+                                <p class="tarif__price">от 100 000 руб.</p>
+                                <p class="tarif__button-block">
+                                    <a class="button button--type_2" href="#">Заказать услугу</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             //= template/feedback-form.html
         </div>

@@ -1,0 +1,79 @@
+.person
+  font-size: 16px
+  line-height: 1.6
+  letter-spacing: 0.48px
+  width: 260px
+
+  @media(min-width: $sm)
+    width: 324px
+
+  @media(min-width: $lg)
+    width: 400px
+
+  &__image
+    margin-bottom: 30px
+
+    @media(min-width: $sm)
+      margin-bottom: 40px
+
+  picture,
+  img
+    display: block
+    width: 100%
+
+  &__name
+    font-size: 20px
+    line-height: 1.35
+    margin-top: 0
+    margin-bottom: 15px
+
+    @media(min-width: $sm)
+      font-size: 24px
+      line-height: 1.375
+
+  &__place,
+  &__email
+    margin-bottom: 0
+
+  &__place
+    color: #717171
+
+  &__about
+    margin-top: 20px
+    margin-bottom: 30px
+
+  &__socials
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+
+    @media(min-width: $sm)
+      margin-top: 40px
+
+    a
+      color: $text-color
+      position: relative
+      text-decoration: none
+
+      &::after
+        background-color: $selection-color
+        bottom: 1px
+        content: ''
+        height: 0
+        left: 0
+        position: absolute
+        top: auto
+        transition: height 0.3s
+        width: 100%
+        z-index: -1
+
+      &:hover,
+      &:focus
+        color: $main-color-hover
+
+      &.is-active,
+      &:active
+        color: $main-color
+
+        &::after
+          height: 8px
