@@ -1,0 +1,42 @@
+.solutions
+  &:not(:last-child)
+    margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+  @media(min-width: 1024px)
+    align-items: center
+    display: flex
+    justify-content: space-between
+
+  &__text-block
+    @media(min-width: 1024px)
+      width: 48.4375%
+
+    @media(min-width: $lg)
+      max-width: 700px
+
+  .tags
+    margin-top: 30px
+
+    @media(min-width: $sm)
+      margin-top: 60px
+
+  &__image
+    @media(min-width: 1024px)
+      max-width: 620px
+      width: 48.4375%
+
+    picture,
+    img
+      display: block
+      width: 100%
+
+    picture
+      margin-left: auto
+      margin-right: auto
+      max-width: 560px
+
+      @media(min-width: 1024px)
+        max-width: 100%
