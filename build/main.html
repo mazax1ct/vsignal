@@ -158,19 +158,19 @@
                     <div class="hero__content">
                         <h1>Помогаем<br> бизнесу перейти <span class='main-color'>в&nbsp;онлайн</span></h1>
                         <div class="hero__buttons">
-                            <button class="js-hero hero__button is-active" type="button" data-src="images/content/hero/img_1.jpg" data-srcset="images/content/hero/img_1@2x.jpg 2x"
-                              data-title="Помогаем бизнесу перейти <span class='main-color'>в&nbsp;онлайн</span>">Digital-стратегии</button>
-                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_2.jpg" data-srcset="images/content/hero/img_2@2x.jpg 2x"
-                              data-title="Решаем бизнес‑задачи в&nbsp;<span class='main-color'>Digital&nbsp;среде</span>">Дизайн</button>
-                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_3.jpg" data-srcset="images/content/hero/img_3@2x.jpg 2x"
-                              data-title="Решаем бизнес‑задачи в&nbsp;<span class='main-color'>Digital&nbsp;среде</span>">Аналитика</button>
-                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_4.jpg" data-srcset="images/content/hero/img_4@2x.jpg 2x"
-                              data-title="Решаем бизнес‑задачи в&nbsp;<span class='main-color'>Digital&nbsp;среде</span>">Реклама</button>
-                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_5.jpg" data-srcset="images/content/hero/img_5@2x.jpg 2x"
-                              data-title="Решаем бизнес‑задачи в&nbsp;<span class='main-color'>Digital&nbsp;среде</span>">Продвижение</button>
+                            <button class="js-hero hero__button is-active" type="button" data-src="images/content/hero/img_1@2x.jpg" data-rotate="rotate-12">Digital-стратегии</button>
+                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_2@2x.jpg" data-rotate="rotate-18">Дизайн</button>
+                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_3@2x.jpg" data-rotate="rotate-24">Аналитика</button>
+                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_4@2x.jpg" data-rotate="rotate-30">Реклама</button>
+                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_5@2x.jpg" data-rotate="rotate-36">Продвижение</button>
                         </div>
                         <div class="hero__image">
-                            <img width="800" height="800" src="images/content/hero/img_1.jpg" srcset="images/content/hero/img_1@2x.jpg 2x" alt="alt">
+                            <svg class="js-mouse-parallax" width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <clipPath id="rotate" class="rotate-12">
+                                    <path d="M964,235l-37.3-64.5l-778.1,0L116,227.1l394,682.4h64.7L964,235z" />
+                                </clipPath>
+                                <image class="js-clip-image" clip-path="url(#rotate)" width="800" height="800" xlink:href="images/content/hero/img_1@2x.jpg" />
+                            </svg>
                         </div>
                         <div class="hero__logos">
                             <img src="images/content/logos/bitrix.jpg" srcset="images/content/logos/bitrix@2x.jpg 2x" alt="Bitrix">
@@ -263,10 +263,14 @@
                 </div>
                 <p class="text-right">
                     <a class="nav-link" href="solutions.html">
-                        <span>Все проекты</span>
-                        <svg>
-                            <use xlink:href="#arrow_right"></use>
-                        </svg>
+                        <span class="nav-link__text">Все проекты</span>
+                        <span class="nav-link__arrow">
+                            <span>
+                                <svg>
+                                    <use xlink:href="#arrow_right"></use>
+                                </svg>
+                            </span>
+                        </span>
                     </a>
                 </p>
             </div>

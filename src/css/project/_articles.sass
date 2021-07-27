@@ -10,16 +10,16 @@ h2,.h2
 
 .articles
   &:not(:last-child)
-    margin-bottom: 40px
-
-    @media(min-width: $sm)
-      margin-bottom: 80px
+    margin-bottom: 80px
 
     @media(min-width: $lg)
       margin-bottom: 120px
 
+    @media(min-width: $xl)
+      margin-bottom: 240px
+
   &__list
-    @media(min-width: 1024px)
+    @media(min-width: $tablet)
       display: flex
       flex-wrap: wrap
       justify-content: space-between
@@ -30,24 +30,24 @@ h2,.h2
     @media(min-width: $sm)
       margin-bottom: 60px
 
-    @media(min-width: 1024px)
+    @media(min-width: $tablet)
       margin-bottom: 100px
       width: 51.5625%
 
     &:nth-child(4n+2),
     &:nth-child(4n+3)
-      @media(min-width: 1024px)
+      @media(min-width: $tablet)
         width: 39.84375%
 
     &:nth-child(4n+2)
-      @media(min-width: 1024px)
+      @media(min-width: $tablet)
         margin-top: 200px
 
       @media(min-width: $lg)
         margin-top: 260px
 
     &:nth-child(4n+3)
-      @media(min-width: 1024px)
+      @media(min-width: $tablet)
         margin-top: -100px
 
       @media(min-width: $lg)

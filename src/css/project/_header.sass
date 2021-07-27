@@ -5,11 +5,16 @@
   position: fixed
   right: 0
   top: 0
-  transition: box-shadow 0.3s
+  transition: box-shadow 0.3s, transform 0.3s
+  transform: translateY(0)
   z-index: 10
 
   &.scrolled
-    box-shadow: 0 0 6px 0 rgba($text-color, 0.3)
+    box-shadow: 0 0 6px 0 rgba($text-color, 0.1)
+
+  &.out
+    box-shadow: none
+    transform: translateY(-100%)
 
   &__inner
     align-items: center
@@ -21,13 +26,15 @@
     padding-right: 30px
 
     @media (min-width: $sm)
-      min-height: 145px
       padding-left: 40px
       padding-right: 40px
 
     @media (min-width: $lg)
       padding-left: 60px
       padding-right: 60px
+
+    @media (min-width: $xl)
+      min-height: 145px
 
   &__logo
     display: block
@@ -74,12 +81,12 @@
       background-color: $selection-color
       bottom: 1px
       content: ''
-      height: 0
+      height: 8px
       left: 0
       position: absolute
       top: auto
-      transition: height 0.3s
-      width: 100%
+      transition: width 0.3s
+      width: 0
       z-index: -1
 
     &:hover,
@@ -91,7 +98,7 @@
       color: $main-color
 
       &::after
-        height: 8px
+        width: 100%
 
   &__burger
     align-items: center
@@ -273,12 +280,12 @@
       background-color: $selection-color
       bottom: -2px
       content: ''
-      height: 0
+      height: 15px
       left: 0
       position: absolute
       top: auto
-      transition: height 0.3s
-      width: 100%
+      transition: width 0.3s
+      width: 0
       z-index: -1
 
     &:active,
@@ -286,4 +293,4 @@
       color: $main-color
 
       &::after
-        height: 15px
+        width: 100%

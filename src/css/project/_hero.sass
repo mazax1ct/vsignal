@@ -5,7 +5,10 @@
     @media(min-width: $lg)
       margin-bottom: 120px
 
-  @media(min-width: 1024px)
+    @media(min-width: $xl)
+      margin-bottom: 240px
+
+  @media(min-width: $tablet)
     position: relative
 
   &::after
@@ -22,18 +25,18 @@
       width: 15px
 
   &__inner
-    @media(min-width: 1024px)
+    @media(min-width: $tablet)
       display: flex
 
     &::after
-      @media(min-width: 1024px)
+      @media(min-width: $tablet)
         display: block
         height: 0
         padding-bottom: 55.388%
         content: ''
 
   &__content
-    @media(min-width: 1024px)
+    @media(min-width: $tablet)
       display: flex
       flex-direction: column
       flex-grow: 1
@@ -57,7 +60,7 @@
     flex-wrap: wrap
     margin-bottom: 5px
 
-    @media(min-width: 1024px)
+    @media(min-width: $tablet)
       margin-bottom: 40px
       max-width: 600px
 
@@ -96,28 +99,28 @@
     &:active,
     &.is-active
       &::after
-        height: 12px
-
-        @media(min-width: $sm)
-          height: 15px
+        width: 100%
 
     &::after
       background-color: $selection-color
       bottom: 0
       content: ''
-      height: 0
+      height: 12px
       left: 0
       position: absolute
       top: auto
-      transition: height 0.3s
-      width: 100%
+      transition: width 0.3s
+      width: 0
       z-index: -1
+
+      @media(min-width: $sm)
+        height: 15px
 
   &__image
     margin-bottom: 40px
     position: relative
 
-    @media(min-width: 1024px)
+    @media(min-width: $tablet)
       left: auto
       margin-bottom: 0
       position: absolute
@@ -125,9 +128,6 @@
       top: 0
       width: 56.79687%
       z-index: -1
-
-    img
-      mask: url('../images/icons/triangle.svg') 50% 50% / cover
 
     &::after
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 52'%3E%3Cg%3E%3Crect fill='%23D5E0E9' x='7.5' y='0.4' class='st0' width='2' height='50'/%3E%3Cpolygon fill='%23D5E0E9' points='8.5,51.6 0.5,43.6 1.9,42.2 8.5,48.8 15.1,42.2 16.5,43.6'/%3E%3C/g%3E%3C/svg%3E%0A")
@@ -148,8 +148,18 @@
         top: 70%
         width: 15px
 
-      @media(min-width: 1024px)
+      @media(min-width: $tablet)
         display: none
+
+    svg
+      height: auto
+      overflow: hidden
+      width: 100%
+
+      image
+        height: auto
+        overflow: hidden
+        width: 100%
 
   &__logos
     display: flex
@@ -171,3 +181,22 @@
         height: 40px
         margin-left: 5px
         margin-right: 5px
+
+#rotate
+  transform-origin: 50% 50% 0
+  transition: transform 0.5s
+
+.rotate-12
+  transform: rotate(12deg)
+
+.rotate-18
+  transform: rotate(18deg)
+
+.rotate-24
+  transform: rotate(24deg)
+
+.rotate-30
+  transform: rotate(30deg)
+
+.rotate-36
+  transform: rotate(36deg)

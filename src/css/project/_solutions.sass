@@ -5,13 +5,16 @@
     @media(min-width: $lg)
       margin-bottom: 120px
 
-  @media(min-width: 1024px)
+    @media(min-width: $xl)
+      margin-bottom: 240px
+
+  @media(min-width: $tablet)
     align-items: center
     display: flex
     justify-content: space-between
 
   &__text-block
-    @media(min-width: 1024px)
+    @media(min-width: $tablet)
       width: 48.4375%
 
     @media(min-width: $lg)
@@ -24,7 +27,7 @@
       margin-top: 60px
 
   &__image
-    @media(min-width: 1024px)
+    @media(min-width: $tablet)
       max-width: 620px
       width: 48.4375%
 
@@ -38,5 +41,5 @@
       margin-right: auto
       max-width: 560px
 
-      @media(min-width: 1024px)
+      @media(min-width: $tablet)
         max-width: 100%

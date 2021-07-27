@@ -19,6 +19,9 @@ body
     overflow: hidden
 
   &.menu-open
+    .header
+      transform: none
+
     .header__logo
       svg
         fill: #fff
@@ -32,7 +35,7 @@ body
   @media (min-width: $sm)
     padding-top: 195px
 
-  @media (min-width: $lg)
+  //@media (min-width: $lg)
     padding-top: 265px
 
   @media (min-width: $xl)
@@ -150,10 +153,10 @@ body
     margin-right: -20px
 
   &:not(:last-child)
-    margin-bottom: 80px
+    margin-bottom: 30px
 
     @media(min-width: $lg)
-      margin-bottom: 120px
+      margin-bottom: 70px
 
   .col
     @media(min-width: $lg)
@@ -283,6 +286,16 @@ h2,.h2
 
 .page-banner + .about-sign
   margin-top: -20px
-  
+
   @media(min-width: $lg)
     margin-top: -60px
+
+.about-sign
+  &:not(:last-child)
+    margin-bottom: 80px
+
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+    @media(min-width: $xl)
+      margin-bottom: 240px

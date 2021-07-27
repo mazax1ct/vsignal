@@ -163,12 +163,12 @@ img
     content: ''
     display: block
     transition: width 0.3s
-    width: 100%
+    width: 0
 
   &:hover,
   &:focus
     &::after
-      width: 50%
+      width: 100%
 
 .main-color
   color: $main-color
@@ -203,21 +203,21 @@ img
       background-color: $selection-color
       bottom: 1px
       content: ''
-      height: 0
+      height: 12px
       left: 0
       position: absolute
       top: auto
-      transition: height 0.3s
-      width: 100%
+      transition: width 0.3s
+      width: 0
       z-index: -1
+
+      @media(min-width: $sm)
+        height: 15px
 
   &:active
     span
       &::after
-        height: 12px
-
-        @media(min-width: $sm)
-          height: 15px
+        width: 100%
 
 .nav-link
   align-items: center
@@ -235,10 +235,21 @@ img
     svg
       fill: $main-color-hover
 
+    .nav-link__arrow
+      span
+        width: 20px
+
+        @media(min-width: $sm)
+          width: 25px
+
   svg
+    display: block
     fill: $main-color
     height: 15px
-    margin-top: 2px
+    left: auto
+    position: absolute
+    right: 0
+    top: 0
     transition: fill 0.3s
     width: 30px
 
@@ -246,31 +257,65 @@ img
       height: 25px
       width: 38px
 
+  &__arrow
+    height: 15px
+    margin-top: 3px
+    position: relative
+    width: 30px
+
+    @media(min-width: $sm)
+      margin-top: 5px
+      height: 25px
+      width: 38px
+
+    span
+      display: block
+      height: 15px
+      left: auto
+      overflow: hidden
+      position: absolute
+      right: 0
+      top: 0
+      transition: width 0.3s
+      width: 30px
+
+      @media(min-width: $sm)
+        height: 25px
+        width: 38px
+
     &:first-child
       margin-right: 10px
+
+      span
+        left: 0
+        right: auto
+
+        svg
+          left: 0
+          right: auto
 
     &:last-child
       margin-left: 10px
 
-  span
+  &__text
     position: relative
 
     &::after
       background-color: $selection-color
       bottom: 1px
       content: ''
-      height: 0
+      height: 12px
       left: 0
       position: absolute
       top: auto
-      transition: height 0.3s
-      width: 100%
+      transition: width 0.3s
+      width: 0
       z-index: -1
 
-  &:active
-    span
-      &::after
-        height: 12px
+      @media(min-width: $sm)
+        height: 15px
 
-        @media(min-width: $sm)
-          height: 15px
+  &:active
+    .nav-link__text
+      &::after
+        width: 100%

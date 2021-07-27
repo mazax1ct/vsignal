@@ -1,14 +1,18 @@
 .advice-banner
-  margin-bottom: 80px
+  &:not(:last-child)
+    margin-bottom: 80px
 
-  @media(min-width: 1024px)
-    align-items: center
-    display: flex
-    justify-content: space-between
-    position: relative
+    @media(min-width: $tablet)
+      align-items: center
+      display: flex
+      justify-content: space-between
+      position: relative
 
-  @media(min-width: $lg)
-    margin-bottom: 120px
+    @media(min-width: $lg)
+      margin-bottom: 120px
+
+    @media(min-width: $xl)
+      margin-bottom: 240px
 
   &__text-block
     margin-bottom: 20px
@@ -16,7 +20,7 @@
     @media(min-width: $sm)
       margin-bottom: 50px
 
-    @media(min-width: 1024px)
+    @media(min-width: $tablet)
       margin-bottom: 0
 
   &__text
@@ -33,7 +37,7 @@
   &__image
     position: relative
 
-    @media(min-width: 1024px)
+    @media(min-width: $tablet)
       position: static
       width: 48.4375%
 
@@ -50,7 +54,7 @@
       @media(min-width: $sm)
         margin-right: 0
 
-      @media(min-width: 1024px)
+      @media(min-width: $tablet)
         max-width: 100%
 
     &::after
@@ -72,6 +76,6 @@
         top: 70%
         width: 15px
 
-      @media(min-width: 1024px)
+      @media(min-width: $tablet)
         bottom: 0
         top: auto

@@ -1,14 +1,12 @@
 .services
-  //padding-top: 40px
-  padding-bottom: 40px
+  &:not(:last-child)
+    margin-bottom: 80px
 
-  @media(min-width: $sm)
-    //padding-top: 80px
-    padding-bottom: 80px
+    @media(min-width: $lg)
+      margin-bottom: 120px
 
-  @media(min-width: $lg)
-    //padding-top: 120px
-    padding-bottom: 120px
+    @media(min-width: $xl)
+      margin-bottom: 240px
 
   h2
     margin-bottom: 30px
@@ -66,10 +64,7 @@
     &.is-active
       .service__title-text
         &::after
-          height: 12px
-
-          @media(min-width: $sm)
-            height: 20px
+          width: 100%
 
   &__title-text
     position: relative
@@ -78,13 +73,16 @@
       background-color: $selection-color
       bottom: 0
       content: ''
-      height: 0
+      height: 12px
       left: 0
       position: absolute
       top: auto
-      transition: height 0.3s
-      width: 100%
+      transition: width 0.3s
+      width: 0
       z-index: -1
+
+      @media(min-width: $sm)
+        height: 20px
 
   &__num
     color: $main-color
