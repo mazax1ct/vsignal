@@ -153,18 +153,18 @@
 
     <div class="page-content">
         <div class="container">
-            <h1>Контакты</h1>
-            <div class="contacts">
+            <h1 class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">Контакты</h1>
+            <div class="contacts wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                 <p class="contacts__city">г. Санкт-Петербург</p>
                 <div class="contacts__info">
                     <p class="contacts__address">Гражданский пр. 114 корпус 6 офис 3</p>
                     <p class="contacts__email"><a class="email-link" href="mailto:mail@vsignal.ru">mail@vsignal.ru</a></p>
                     <p class="contacts__phone"><a href="tel:+78125018207">8 (812) 501-82-07</a></p>
                 </div>
-                <div id="contacts_map" class="contacts__map"></div>
+                <div id="contacts_map" class="contacts__map wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s"></div>
             </div>
 
-            <section class="feedback-form">
+            <section class="feedback-form wow fadeInUpBig" data-wow-duration="1.5s">
                 <h2>Связаться с нами</h2>
                 <form class="feedback-form__form" method="post" action="">
                     <div class="feedback-form__row">
@@ -219,6 +219,14 @@
     <script src="js/scroll-compensate.js"></script>
     <script src="js/preloader.js"></script>
     <script src="js/contacts-map.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init({
+            mobile: false,
+            offset: 300
+        });
+    </script>
 </body>
 
 </html>

@@ -24,11 +24,12 @@ body
 
     .header__logo
       svg
-        fill: #fff
+        @media(min-width: 1350px)
+          fill: #fff
 
 .page-content
   flex: 1 0 auto
-  overflow-x: hidden
+  overflow: hidden
   padding-top: 110px
   padding-bottom: 110px
 
@@ -153,23 +154,19 @@ body
     margin-right: -20px
 
   &:not(:last-child)
-    margin-bottom: 30px
+    margin-bottom: 40px
 
     @media(min-width: $lg)
       margin-bottom: 70px
 
   .col
+    margin-bottom: 40px
+
     @media(min-width: $lg)
       margin-bottom: 50px
       padding-left: 20px
       padding-right: 20px
       width: 33.33333%
-
-    &:not(:last-child)
-      margin-bottom: 40px
-
-      @media(min-width: $sm)
-        margin-bottom: 50px
 
 .cols-4
   @media(min-width: $sm)
@@ -179,14 +176,15 @@ body
     margin-right: -20px
 
   &:not(:last-child)
-    margin-bottom: 80px
+    margin-bottom: 40px
 
     @media(min-width: $lg)
-      margin-bottom: 120px
+      margin-bottom: 70px
 
   .col
+    margin-bottom: 40px
+
     @media(min-width: $sm)
-      margin-bottom: 40px
       padding-left: 20px
       padding-right: 20px
       width: 50%
@@ -196,9 +194,6 @@ body
       padding-left: 20px
       padding-right: 20px
       width: 25%
-
-    &:not(:last-child)
-      margin-bottom: 40px
 
 h2,.h2
   & + .cols-3,
@@ -252,12 +247,11 @@ h2,.h2
   @media(min-width: $sm)
     font-size: 16px
     letter-spacing: 0.48px
-    margin-bottom: 30px
+    margin-bottom: 50px
 
   @media(min-width: $lg)
     font-size: 20px
     line-height: 1.7
-    margin-bottom: 50px
 
   &__item
     margin-bottom: 30px

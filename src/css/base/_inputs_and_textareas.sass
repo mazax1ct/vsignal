@@ -21,6 +21,15 @@
     border-color: $main-color
     outline: none
 
+    &::-webkit-input-placeholder
+      opacity: 0.5
+
+    &::-moz-placeholder
+      opacity: 0.5
+
+    &:-ms-input-placeholder
+      opacity: 0.5
+
   &.error
     border-color: $error-color
 
@@ -38,14 +47,17 @@
   &::-webkit-input-placeholder
     color: $text-color
     opacity: 1
+    transition: opacity 0.3s
 
   &::-moz-placeholder
     color: $text-color
     opacity: 1
+    transition: opacity 0.3s
 
   &:-ms-input-placeholder
     color: $text-color
     opacity: 1
+    transition: opacity 0.3s
 
 .textarea
   resize: vertical

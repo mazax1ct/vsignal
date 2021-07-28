@@ -30,11 +30,11 @@
 
     <div class="page-content">
         <div class="container">
-            <h1>Кейсы</h1>
-            <div class="text-block-730">
+            <h1 class=" wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">Кейсы</h1>
+            <div class="text-block-730 wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.8s">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <ul class="tags">
+            <ul class="tags wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="1.1s">
                 <li class="tags__item"><a class="tags__link is-active" href="#">Все</a></li>
                 <li class="tags__item"><a class="tags__link" href="#">Спорт</a></li>
                 <li class="tags__item"><a class="tags__link" href="#">Заводы</a></li>
@@ -49,7 +49,7 @@
             </ul>
             <div class="articles">
                 <div class="articles__list">
-                    <div class="articles__item">
+                    <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="1.4s">
                         <article class="article">
                             <a class="article__link" href="case.html">
                                 <picture>
@@ -61,7 +61,7 @@
                             <p class="article__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), интеграция сайта с 1С, комплексная маркетинговая поддержка</p>
                         </article>
                     </div>
-                    <div class="articles__item">
+                    <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <article class="article">
                             <a class="article__link" href="case.html">
                                 <picture>
@@ -73,7 +73,7 @@
                             <p class="article__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), комплексная маркетинговая поддержка</p>
                         </article>
                     </div>
-                    <div class="articles__item">
+                    <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <article class="article">
                             <a class="article__link" href="case.html">
                                 <picture>
@@ -85,7 +85,7 @@
                             <p class="article__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), интеграция сайта с 1С и CRM Bitrix 24, комплексная маркетинговая поддержка</p>
                         </article>
                     </div>
-                    <div class="articles__item">
+                    <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <article class="article">
                             <a class="article__link" href="case.html">
                                 <picture>
@@ -97,7 +97,7 @@
                             <p class="article__preview-text">Разработка маркетинговой стратегии, разработка и продвижение сайта (CMS 1С-Битрикс), ведение социальных сетей, комплексная маркетинговая поддержка</p>
                         </article>
                     </div>
-                    <div class="articles__item">
+                    <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <article class="article">
                             <a class="article__link" href="case.html">
                                 <picture>
@@ -109,7 +109,7 @@
                             <p class="article__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), интеграция сайта с 1С, комплексная маркетинговая поддержка</p>
                         </article>
                     </div>
-                    <div class="articles__item">
+                    <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <article class="article">
                             <a class="article__link" href="case.html">
                                 <picture>
@@ -121,7 +121,7 @@
                             <p class="article__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), комплексная маркетинговая поддержка</p>
                         </article>
                     </div>
-                    <div class="articles__item">
+                    <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <article class="article">
                             <a class="article__link" href="case.html">
                                 <picture>
@@ -133,7 +133,7 @@
                             <p class="article__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), интеграция сайта с 1С и CRM Bitrix 24, комплексная маркетинговая поддержка</p>
                         </article>
                     </div>
-                    <div class="articles__item">
+                    <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <article class="article">
                             <a class="article__link" href="case.html">
                                 <picture>
@@ -146,7 +146,7 @@
                         </article>
                     </div>
                 </div>
-                <p class="more-block">
+                <p class="more-block wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                     <a class="more-block__link" href="#">Загрузить еще</a>
                 </p>
             </div>
@@ -158,6 +158,14 @@
     //= template/footer.html
 
     //= template/scripts.html
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init({
+            mobile: false,
+            offset: 300
+        });
+    </script>
 </body>
 
 </html>
