@@ -8,6 +8,9 @@
     @media(min-width: $xl)
       margin-bottom: 240px
 
+  @media(min-width: $sm)
+    margin-top: -60px
+
   @media(min-width: $tablet)
     position: relative
 
@@ -64,8 +67,8 @@
       margin-bottom: 40px
       max-width: 600px
 
-    @media(min-width: $lg)
-      margin-bottom: 120px
+    @media(min-width: $xl)
+      margin-bottom: 80px
 
   &__button
     background-color: transparent
@@ -122,6 +125,7 @@
 
     @media(min-width: $tablet)
       left: auto
+      height: 100%
       margin-bottom: 0
       position: absolute
       right: 0
@@ -156,6 +160,13 @@
       overflow: hidden
       width: 100%
 
+      @media(min-width: $tablet)
+        left: 50%
+        position: absolute
+        top: 50%
+        transform: translate(-40%, -50%)
+        width: 115%
+
       image
         height: auto
         overflow: hidden
@@ -187,16 +198,16 @@
   transition: transform 0.5s
 
 .rotate-12
-  transform: rotate(12deg)
+  transform: rotate(-12deg)
 
 .rotate-18
-  transform: rotate(18deg)
+  transform: rotate(-18deg)
 
 .rotate-24
-  transform: rotate(24deg)
+  transform: rotate(-24deg)
 
 .rotate-30
-  transform: rotate(30deg)
+  transform: rotate(-30deg)
 
 .rotate-36
-  transform: rotate(36deg)
+  transform: rotate(-36deg)

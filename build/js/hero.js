@@ -4,14 +4,14 @@ $(document).on('mouseenter click', '.js-hero', function () {
   $('#rotate').removeClass().addClass($(this).attr('data-rotate'));
   $('.js-clip-image').attr('xlink:href', $(this).attr('data-src'));
   //$('.hero__content h1').html($(this).attr('data-title'));
-  clearInterval(timerId);
+  /*clearInterval(timerId);
   timerId = setInterval(function() {
     changeSlide();
-  }, 5000);
+  }, 5000);*/
   return false;
 });
 
-if($('body').width() > 1199) {
+/*if($('body').width() > 1199) {
   let parallax = document.querySelector('.js-mouse-parallax');
 
   window.addEventListener('mousemove', function(e) {
@@ -19,7 +19,7 @@ if($('body').width() > 1199) {
       let y = e.clientY / window.innerHeight;
       parallax.style.transform = 'translate(' + x * 70 + 'px, ' + y * 70 + 'px)';
   });
-}
+}*/
 
 function changeSlide () {
   var current = $('.js-hero.is-active');
@@ -36,6 +36,6 @@ function changeSlide () {
   }
 }
 
-let timerId = setInterval(function() {
+/*let timerId = setInterval(function() {
   changeSlide();
-}, 5000);
+}, 5000);*/
