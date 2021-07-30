@@ -48,10 +48,11 @@
     transition: color 0.3s
 
     @media(min-width: $sm)
-      font-size: 30px
+      font-size: 24px
       padding-left: 75px
 
     @media(min-width: $lg)
+      font-size: 30px
       padding-left: 105px
       padding-right: 40px
 
@@ -81,7 +82,7 @@
       width: 0
       z-index: -1
 
-      @media(min-width: $sm)
+      @media(min-width: $lg)
         height: 20px
 
   &__num
@@ -100,15 +101,13 @@
 
   &__text-block
     display: none
-    font-size: 18px
-    line-height: 1.7
-    letter-spacing: 0.54px
     padding-top: 20px
     padding-bottom: 10px
 
     @media(min-width: $sm)
-      font-size: 20px
-      letter-spacing: 0.6px
+      font-size: 18px
+      line-height: 1.7
+      letter-spacing: 0.54px
       padding-left: 75px
       padding-top: 40px
       padding-bottom: 0
@@ -116,6 +115,10 @@
     @media(min-width: $lg)
       padding: 0
       width: 50%
+
+    @media(min-width: $xl)
+      font-size: 20px
+      letter-spacing: 0.6px
 
     p
       &:not(:last-child)

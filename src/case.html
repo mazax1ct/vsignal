@@ -74,31 +74,33 @@
                     <p>При этом мы сохранили понятный пользовательский интерфейс в каталоге и корзине для удобства покупателей.</p>
                 </div>
 
-                <div class="scroller wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                    <div class="js-scroller swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="scroller__image">
-                                    <img src="images/content/case/prot_1.jpg" srcset="images/content/case/prot_1@2x.jpg 2x" alt="alt">
+                <div class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                    <div class="scroller">
+                        <div class="js-scroller swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="scroller__image">
+                                        <img src="images/content/case/prot_1.jpg" srcset="images/content/case/prot_1@2x.jpg 2x" alt="alt">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="scroller__image">
+                                        <img src="images/content/case/prot_2.jpg" srcset="images/content/case/prot_2@2x.jpg 2x" alt="alt">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="scroller__image">
+                                        <img src="images/content/case/prot_3.jpg" srcset="images/content/case/prot_3@2x.jpg 2x" alt="alt">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="scroller__image">
+                                        <img src="images/content/case/prot_4.jpg" srcset="images/content/case/prot_4@2x.jpg 2x" alt="alt">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="scroller__image">
-                                    <img src="images/content/case/prot_2.jpg" srcset="images/content/case/prot_2@2x.jpg 2x" alt="alt">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="scroller__image">
-                                    <img src="images/content/case/prot_3.jpg" srcset="images/content/case/prot_3@2x.jpg 2x" alt="alt">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="scroller__image">
-                                    <img src="images/content/case/prot_4.jpg" srcset="images/content/case/prot_4@2x.jpg 2x" alt="alt">
-                                </div>
-                            </div>
+                            <div class="swiper-scrollbar"></div>
                         </div>
-                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
 
@@ -174,10 +176,11 @@
 
     <script src="js/wow.min.js"></script>
     <script>
-        new WOW().init({
+        wow = new WOW({
             mobile: false,
-            offset: 300
+            offset: 150
         });
+        wow.init();
     </script>
 </body>
 

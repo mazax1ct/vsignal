@@ -187,25 +187,27 @@
                 <h2 class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">Мы готовы подключиться<br> к вашему проекту — <span class="main-color">прямо сейчас</span></h2>
                 <p class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">На любом этапе и сложности стоящих задач.</p>
                 <p class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">От разработки дизайн-макета сайта до реализации маркетинговой стратегии.<br> Более 50 клиентов уже сделали свой выбор и успешно развиваются с нами.</p>
-                <div class="infinite-scroller wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                    <div class="js-infinitescroller infinite-scroller__inner">
-                        <ul class="infinite-scroller__list">
-                            <li><img src="images/content/logos/abajjur.jpg" srcset="images/content/logos/abajjur@2x.jpg 2x" alt="alt"></li>
-                            <li><img src="images/content/logos/profildoors.jpg" srcset="images/content/logos/profildoors@2x.jpg 2x" alt="alt"></li>
-                            <li><img src="images/content/logos/dverishop-logo.jpg" srcset="images/content/logos/dverishop-logo@2x.jpg 2x" alt="alt"></li>
-                            <li><img src="images/content/logos/x-clinic-logo.jpg" srcset="images/content/logos/x-clinic-logo@2x.jpg 2x" alt="alt"></li>
-                            <li><img src="images/content/logos/decorum-logo.jpg" srcset="images/content/logos/decorum-logo@2x.jpg 2x" alt="alt"></li>
-                            <li><img src="images/content/logos/kaskad.jpg" srcset="images/content/logos/kaskad@2x.jpg 2x" alt="alt"></li>
-                            <li><img src="images/content/logos/forsite.jpg" srcset="images/content/logos/forsite@2x.jpg 2x" alt="alt"></li>
-                            <li><img src="images/content/logos/sport-olimp.jpg" srcset="images/content/logos/sport-olimp@2x.jpg 2x" alt="alt"></li>
-                            <li><img src="images/content/logos/sibir.jpg" srcset="images/content/logos/sibir@2x.jpg 2x" alt="alt"></li>
-                            <li><img src="images/content/logos/star.jpg" srcset="images/content/logos/star@2x.jpg 2x" alt="alt"></li>
-                            <li><img src="images/content/logos/primed.jpg" srcset="images/content/logos/primed@2x.jpg 2x" alt="alt"></li>
-                            <li><img src="images/content/logos/digital-razor.jpg" srcset="images/content/logos/digital-razor@2x.jpg 2x" alt="alt"></li>
-                        </ul>
+                <div class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                    <div class="infinite-scroller">
+                        <div class="js-infinitescroller infinite-scroller__inner">
+                            <ul class="infinite-scroller__list">
+                                <li><img src="images/content/logos/abajjur.jpg" srcset="images/content/logos/abajjur@2x.jpg 2x" alt="alt"></li>
+                                <li><img src="images/content/logos/profildoors.jpg" srcset="images/content/logos/profildoors@2x.jpg 2x" alt="alt"></li>
+                                <li><img src="images/content/logos/dverishop-logo.jpg" srcset="images/content/logos/dverishop-logo@2x.jpg 2x" alt="alt"></li>
+                                <li><img src="images/content/logos/x-clinic-logo.jpg" srcset="images/content/logos/x-clinic-logo@2x.jpg 2x" alt="alt"></li>
+                                <li><img src="images/content/logos/decorum-logo.jpg" srcset="images/content/logos/decorum-logo@2x.jpg 2x" alt="alt"></li>
+                                <li><img src="images/content/logos/kaskad.jpg" srcset="images/content/logos/kaskad@2x.jpg 2x" alt="alt"></li>
+                                <li><img src="images/content/logos/forsite.jpg" srcset="images/content/logos/forsite@2x.jpg 2x" alt="alt"></li>
+                                <li><img src="images/content/logos/sport-olimp.jpg" srcset="images/content/logos/sport-olimp@2x.jpg 2x" alt="alt"></li>
+                                <li><img src="images/content/logos/sibir.jpg" srcset="images/content/logos/sibir@2x.jpg 2x" alt="alt"></li>
+                                <li><img src="images/content/logos/star.jpg" srcset="images/content/logos/star@2x.jpg 2x" alt="alt"></li>
+                                <li><img src="images/content/logos/primed.jpg" srcset="images/content/logos/primed@2x.jpg 2x" alt="alt"></li>
+                                <li><img src="images/content/logos/digital-razor.jpg" srcset="images/content/logos/digital-razor@2x.jpg 2x" alt="alt"></li>
+                            </ul>
+                        </div>
                     </div>
+                    <p><a class="button button--type_1" href="#">Начнём?</a></p>
                 </div>
-                <p class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s"><a class="button button--type_1" href="#">Начнём?</a></p>
             </div>
 
             <h2 class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">Проекты</h2>
@@ -446,10 +448,11 @@
 
     <script src="js/wow.min.js"></script>
     <script>
-        new WOW().init({
+        wow = new WOW({
             mobile: false,
-            offset: 300
+            offset: 150
         });
+        wow.init();
     </script>
 </body>
 

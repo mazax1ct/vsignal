@@ -64,41 +64,43 @@
 
             <h2 class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">В каких случаях VSignal<br> будет <span class="main-color">полезным</span></h2>
 
-            <div class="scroller wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                <div class="js-scroller swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="benefit">
-                                <h3 class="benefit__title">Запуск нового продукта</h3>
-                                <p>Проведем маркетинговый аудит вашего продукта и рынка. Определим кому, зачем и как мы будем коммуницировать о продукте.</p>
+            <div class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                <div class="scroller">
+                    <div class="js-scroller swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="benefit">
+                                    <h3 class="benefit__title">Запуск нового продукта</h3>
+                                    <p>Проведем маркетинговый аудит вашего продукта и рынка. Определим кому, зачем и как мы будем коммуницировать о продукте.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="benefit">
+                                    <h3 class="benefit__title">Выход на новый рынок</h3>
+                                    <p>Поможем понять, как стратегически подойти к продвижению товара на новый рынок.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="benefit">
+                                    <h3 class="benefit__title">Проверка бизнес-идеи</h3>
+                                    <p>Протестуем вашу бизнес-идею и оценим ее эффективность.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="benefit">
+                                    <h3 class="benefit__title">Неопределенность</h3>
+                                    <p>Посоветуем, как построить эффективный маркетинг или создать стратегию, нацеленную на бизнес-результат.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="benefit">
+                                    <h3 class="benefit__title">Бизнес не развивается</h3>
+                                    <p>Проведем диагностику вашего бизнеса. Выясним причины низкой динамики роста бизнеса.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="benefit">
-                                <h3 class="benefit__title">Выход на новый рынок</h3>
-                                <p>Поможем понять, как стратегически подойти к продвижению товара на новый рынок.</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="benefit">
-                                <h3 class="benefit__title">Проверка бизнес-идеи</h3>
-                                <p>Протестуем вашу бизнес-идею и оценим ее эффективность.</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="benefit">
-                                <h3 class="benefit__title">Неопределенность</h3>
-                                <p>Посоветуем, как построить эффективный маркетинг или создать стратегию, нацеленную на бизнес-результат.</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="benefit">
-                                <h3 class="benefit__title">Бизнес не развивается</h3>
-                                <p>Проведем диагностику вашего бизнеса. Выясним причины низкой динамики роста бизнеса.</p>
-                            </div>
-                        </div>
+                        <div class="swiper-scrollbar"></div>
                     </div>
-                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
 
@@ -281,10 +283,11 @@
 
     <script src="js/wow.min.js"></script>
     <script>
-        new WOW().init({
+        wow = new WOW({
             mobile: false,
-            offset: 300
+            offset: 150
         });
+        wow.init();
     </script>
 </body>
 

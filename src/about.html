@@ -36,48 +36,50 @@
                 <p>Консалтинговое агентство, проектируем сложные сайты, настраиваем сквозную аналитику, оптимизируем расходы на рекламу, разрабатываем Digital стратегию.</p>
             </div>
 
-            <div class="scroller wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="1.1s">
-                <div class="js-scroller swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="person">
-                                <picture class="person__image">
-                                    <img src="images/content/about/victor.jpg" srcset="images/content/about/victor@2x.jpg 2x" alt="Виктор">
-                                </picture>
-                                <h2 class="person__name">Виктор</h2>
-                                <p class="person__place">Руководитель компании</p>
-                                <p class="person__email"><a class="email-link" href="mailto:victor@vsignal.ru">victor@vsignal.ru</a></p>
+            <div class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="1.1s">
+                <div class="scroller">
+                    <div class="js-scroller swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="person">
+                                    <picture class="person__image">
+                                        <img src="images/content/about/victor.jpg" srcset="images/content/about/victor@2x.jpg 2x" alt="Виктор">
+                                    </picture>
+                                    <h2 class="person__name">Виктор</h2>
+                                    <p class="person__place">Руководитель компании</p>
+                                    <p class="person__email"><a class="email-link" href="mailto:victor@vsignal.ru">victor@vsignal.ru</a></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="person">
+                                    <picture class="person__image">
+                                        <img src="images/content/about/mihail.jpg" srcset="images/content/about/mihail@2x.jpg 2x" alt="Михаил">
+                                    </picture>
+                                    <h2 class="person__name">Михаил</h2>
+                                    <p class="person__place">Digital-стратег</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="person">
+                                    <picture class="person__image">
+                                        <img src="images/content/about/sergey.jpg" srcset="images/content/about/sergey@2x.jpg 2x" alt="Сергей">
+                                    </picture>
+                                    <h2 class="person__name">Сергей</h2>
+                                    <p class="person__place">IT-джедай</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="person">
+                                    <picture class="person__image">
+                                        <img src="images/content/about/janina.jpg" srcset="images/content/about/janina@2x.jpg 2x" alt="Янина">
+                                    </picture>
+                                    <h2 class="person__name">Янина</h2>
+                                    <p class="person__place">Нежный SMM</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="person">
-                                <picture class="person__image">
-                                    <img src="images/content/about/mihail.jpg" srcset="images/content/about/mihail@2x.jpg 2x" alt="Михаил">
-                                </picture>
-                                <h2 class="person__name">Михаил</h2>
-                                <p class="person__place">Digital-стратег</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="person">
-                                <picture class="person__image">
-                                    <img src="images/content/about/sergey.jpg" srcset="images/content/about/sergey@2x.jpg 2x" alt="Сергей">
-                                </picture>
-                                <h2 class="person__name">Сергей</h2>
-                                <p class="person__place">IT-джедай</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="person">
-                                <picture class="person__image">
-                                    <img src="images/content/about/janina.jpg" srcset="images/content/about/janina@2x.jpg 2x" alt="Янина">
-                                </picture>
-                                <h2 class="person__name">Янина</h2>
-                                <p class="person__place">Нежный SMM</p>
-                            </div>
-                        </div>
+                        <div class="swiper-scrollbar"></div>
                     </div>
-                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
 
@@ -101,7 +103,7 @@
                     <p>опытных специалистов</p>
                 </div>
                 <div class="infographics__item">
-                    <p class="infographics__title">>2 лет</p>
+                    <p class="infographics__title">>2&nbsp;лет</p>
                     <p>LTV</p>
                 </div>
             </div>
@@ -133,10 +135,11 @@
 
     <script src="js/wow.min.js"></script>
     <script>
-        new WOW().init({
+        wow = new WOW({
             mobile: false,
-            offset: 300
+            offset: 150
         });
+        wow.init();
     </script>
 </body>
 

@@ -18,7 +18,7 @@ h2,.h2
     @media(min-width: $xl)
       margin-bottom: 200px
 
-  @media(min-width: $lg)
+  @media(min-width: $tablet)
     display: flex
     margin-left: -20px
     margin-right: -20px
@@ -29,11 +29,15 @@ h2,.h2
     @media(min-width: $sm)
       margin-bottom: 40px
 
-    @media(min-width: $lg)
+    @media(min-width: $tablet)
       display: flex
+      padding-left: 15px
+      padding-right: 15px
+      width: 33.33333%
+
+    @media(min-width: $lg)
       padding-left: 20px
       padding-right: 20px
-      width: 33.33333%
 
 .tarif
   border: 1px solid $border-color
@@ -45,8 +49,12 @@ h2,.h2
     display: flex
     padding: 35px
 
-  @media(min-width: $lg)
+  @media(min-width: $tablet)
     flex-direction: column
+    padding: 20px
+
+  @media(min-width: $lg)
+    padding: 35px
 
   &:hover
     border-color: $main-color-hover
@@ -60,12 +68,12 @@ h2,.h2
     margin-bottom: 20px
     width: 40px
 
-    @media(min-width: $sm)
+    @media(min-width: $lg)
       min-width: 65px
-      margin-bottom: 0
+      margin-bottom: 20px
       width: 65px
 
-    @media(min-width: $lg)
+    //@media(min-width: $lg)
       margin-bottom: 20px
 
   &__info
@@ -73,7 +81,7 @@ h2,.h2
       flex-grow: 1
       padding-left: 45px
 
-    @media(min-width: $lg)
+    @media(min-width: $tablet)
       display: flex
       flex-direction: column
       padding-left: 0
@@ -86,12 +94,9 @@ h2,.h2
     letter-spacing: 0
     margin-bottom: 20px
 
-    @media(min-width: $sm)
+    @media(min-width: $lg)
       font-size: 30px
       margin-bottom: 30px
-      padding-top: 15px
-
-    @media(min-width: $lg)
       padding-top: 0
 
   &__subtitle
@@ -113,11 +118,8 @@ h2,.h2
     letter-spacing: 0
     margin-bottom: 20px
 
-    @media(min-width: $sm)
-      font-size: 20px
-      margin-bottom: 30px
-
     @media(min-width: $lg)
+      font-size: 20px
       margin-bottom: 20px
 
   &__problems
@@ -142,14 +144,14 @@ h2,.h2
     font-weight: 700
     margin-bottom: 30px
 
-    @media(min-width: $sm)
+    @media(min-width: $lg)
       font-size: 30px
 
     small
       font-size: 16px
       font-weight: 400
 
-      @media(min-width: $sm)
+      @media(min-width: $lg)
         font-size: 18px
 
   &__button-block
