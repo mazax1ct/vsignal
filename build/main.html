@@ -57,7 +57,7 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 
-<body>
+<body class="hero-page">
     <div id="preloader">
         <svg width="140" height="45" viewBox="0 0 140 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g>
@@ -152,17 +152,22 @@
     </header>
 
     <div class="page-content">
-        <div class="container">
-            <div class="hero">
+        <div class="hero">
+            <div class="container">
                 <div class="hero__inner">
                     <div class="hero__content">
                         <h1 class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">Помогаем<br> бизнесу перейти <span class='main-color'>в&nbsp;онлайн</span></h1>
                         <div class="hero__buttons wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.8s">
-                            <button class="js-hero hero__button is-active" type="button" data-src="images/content/hero/img_1@2x.jpg" data-rotate="rotate-12">Digital-стратегии</button>
-                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_2@2x.jpg" data-rotate="rotate-18">Дизайн</button>
-                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_3@2x.jpg" data-rotate="rotate-24">Аналитика</button>
-                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_4@2x.jpg" data-rotate="rotate-30">Реклама</button>
-                            <button class="js-hero hero__button" type="button" data-src="images/content/hero/img_5@2x.jpg" data-rotate="rotate-36">Продвижение</button>
+                            <button class="js-hero hero__button is-active" type="button" data-srcmob="images/content/hero/img_1.jpg" data-srcsetmob="images/content/hero/img_1@2x.jpg"
+                              data-srcset="images/content/hero/img_1.jpg, images/content/hero/img_1@2x.jpg 2x" data-src="images/content/hero/img_1@2x.jpg" data-rotate="rotate-12">Digital-стратегии</button>
+                            <button class="js-hero hero__button" type="button" data-srcmob="images/content/hero/img_2.jpg" data-srcsetmob="images/content/hero/img_2@2x.jpg"
+                              data-srcset="images/content/hero/img_2.jpg, images/content/hero/img_2@2x.jpg 2x" data-src="images/content/hero/img_2@2x.jpg" data-rotate="rotate-18">Дизайн</button>
+                            <button class="js-hero hero__button" type="button" data-srcmob="images/content/hero/img_3.jpg" data-srcsetmob="images/content/hero/img_3@2x.jpg"
+                              data-srcset="images/content/hero/img_3.jpg, images/content/hero/img_3@2x.jpg 2x" data-src="images/content/hero/img_3@2x.jpg" data-rotate="rotate-24">Аналитика</button>
+                            <button class="js-hero hero__button" type="button" data-srcmob="images/content/hero/img_4.jpg" data-srcsetmob="images/content/hero/img_4@2x.jpg"
+                              data-srcset="images/content/hero/img_4.jpg, images/content/hero/img_4@2x.jpg 2x" data-src="images/content/hero/img_4@2x.jpg" data-rotate="rotate-30">Реклама</button>
+                            <button class="js-hero hero__button" type="button" data-srcmob="images/content/hero/img_5.jpg" data-srcsetmob="images/content/hero/img_5@2x.jpg"
+                              data-srcset="images/content/hero/img_5.jpg, images/content/hero/img_5@2x.jpg 2x" data-src="images/content/hero/img_5@2x.jpg" data-rotate="rotate-36">Продвижение</button>
                         </div>
                         <div class="hero__image wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="1.1s">
                             <svg class="js-mouse-parallax" width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -182,7 +187,13 @@
                     </div>
                 </div>
             </div>
+            <picture class="hero__back">
+                <source srcset="images/content/hero/img_1.jpg, images/content/hero/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                <img src="images/content/hero/img_1.jpg" srcset="images/content/hero/img_1@2x.jpg 2x" alt="">
+            </picture>
+        </div>
 
+        <div class="container">
             <div class="join">
                 <h2 class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">Мы готовы подключиться<br> к вашему проекту — <span class="main-color">прямо сейчас</span></h2>
                 <p class="wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">На любом этапе и сложности стоящих задач.</p>
@@ -217,10 +228,22 @@
                     <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.8s">
                         <article class="article">
                             <a class="article__link" href="case.html">
-                                <picture>
-                                    <source srcset="images/content/cases/img_1.jpg, images/content/cases/img_1@2x.jpg 2x" media="(min-width: 768px)">
-                                    <img src="images/content/cases/img_1_mob.jpg" srcset="images/content/cases/img_1_mob@2x.jpg 2x" alt="alt">
-                                </picture>
+                                <span class="article__picture-block">
+                                    <picture>
+                                        <source srcset="images/content/cases/img_1.jpg, images/content/cases/img_1@2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="images/content/cases/img_1_mob.jpg" srcset="images/content/cases/img_1_mob@2x.jpg 2x" alt="alt">
+                                    </picture>
+                                    <div class="article__image-togglers">
+                                        <div class="article__image-toggler is-active" data-srcmob="images/content/cases/img_1_mob.jpg" data-srcsetmob="images/content/cases/img_1_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_1.jpg, images/content/cases/img_1@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_2_mob.jpg" data-srcsetmob="images/content/cases/img_2_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_2.jpg, images/content/cases/img_2@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_3_mob.jpg" data-srcsetmob="images/content/cases/img_3_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_3.jpg, images/content/cases/img_3@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_4_mob.jpg" data-srcsetmob="images/content/cases/img_4_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_4.jpg, images/content/cases/img_4@2x.jpg 2x"></div>
+                                    </div>
+                                </span>
                                 <h2 class="article__title">Gold Union House</h2>
                             </a>
                             <p class="article__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), интеграция сайта с 1С, комплексная маркетинговая поддержка</p>
@@ -229,10 +252,22 @@
                     <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <article class="article">
                             <a class="article__link" href="case.html">
-                                <picture>
-                                    <source srcset="images/content/cases/img_2.jpg, images/content/cases/img_2@2x.jpg 2x" media="(min-width: 768px)">
-                                    <img src="images/content/cases/img_2_mob.jpg" srcset="images/content/cases/img_2_mob@2x.jpg 2x" alt="alt">
-                                </picture>
+                                <span class="article__picture-block">
+                                    <picture>
+                                        <source srcset="images/content/cases/img_2.jpg, images/content/cases/img_2@2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="images/content/cases/img_2_mob.jpg" srcset="images/content/cases/img_2_mob@2x.jpg 2x" alt="alt">
+                                    </picture>
+                                    <div class="article__image-togglers">
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_1_mob.jpg" data-srcsetmob="images/content/cases/img_1_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_1.jpg, images/content/cases/img_1@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler is-active" data-srcmob="images/content/cases/img_2_mob.jpg" data-srcsetmob="images/content/cases/img_2_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_2.jpg, images/content/cases/img_2@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_3_mob.jpg" data-srcsetmob="images/content/cases/img_3_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_3.jpg, images/content/cases/img_3@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_4_mob.jpg" data-srcsetmob="images/content/cases/img_4_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_4.jpg, images/content/cases/img_4@2x.jpg 2x"></div>
+                                    </div>
+                                </span>
                                 <h2 class="article__title">ДвериШоп</h2>
                             </a>
                             <p class="article__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), комплексная маркетинговая поддержка</p>
@@ -241,10 +276,22 @@
                     <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <article class="article">
                             <a class="article__link" href="case.html">
-                                <picture>
-                                    <source srcset="images/content/cases/img_3.jpg, images/content/cases/img_3@2x.jpg 2x" media="(min-width: 768px)">
-                                    <img src="images/content/cases/img_3_mob.jpg" srcset="images/content/cases/img_3_mob@2x.jpg 2x" alt="alt">
-                                </picture>
+                                <span class="article__picture-block">
+                                    <picture>
+                                        <source srcset="images/content/cases/img_3.jpg, images/content/cases/img_3@2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="images/content/cases/img_3_mob.jpg" srcset="images/content/cases/img_3_mob@2x.jpg 2x" alt="alt">
+                                    </picture>
+                                    <div class="article__image-togglers">
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_1_mob.jpg" data-srcsetmob="images/content/cases/img_1_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_1.jpg, images/content/cases/img_1@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_2_mob.jpg" data-srcsetmob="images/content/cases/img_2_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_2.jpg, images/content/cases/img_2@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler is-active" data-srcmob="images/content/cases/img_3_mob.jpg" data-srcsetmob="images/content/cases/img_3_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_3.jpg, images/content/cases/img_3@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_4_mob.jpg" data-srcsetmob="images/content/cases/img_4_mob@2x.jpg"
+                                          data-srcset="images/content/cases/img_4.jpg, images/content/cases/img_4@2x.jpg 2x"></div>
+                                    </div>
+                                </span>
                                 <h2 class="article__title">Decorum</h2>
                             </a>
                             <p class="article__preview-text">Разработка и продвижение сайта (CMS 1С-Битрикс), интеграция сайта с 1С и CRM Bitrix 24, комплексная маркетинговая поддержка</p>
@@ -253,10 +300,22 @@
                     <div class="articles__item wow fadeInUpBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                         <article class="article">
                             <a class="article__link" href="case.html">
-                                <picture>
-                                    <source srcset="images/content/cases/img_4.jpg, images/content/cases/img_4@2x.jpg 2x" media="(min-width: 768px)">
-                                    <img src="images/content/cases/img_4_mob.jpg" srcset="images/content/cases/img_4_mob@2x.jpg 2x" alt="alt">
-                                </picture>
+                                <span class="article__picture-block">
+                                    <picture>
+                                        <source srcset="images/content/cases/img_4.jpg, images/content/cases/img_4@2x.jpg 2x" media="(min-width: 768px)">
+                                        <img src="images/content/cases/img_4_mob.jpg" srcset="images/content/cases/img_4_mob@2x.jpg 2x" alt="alt">
+                                    </picture>
+                                    <div class="article__image-togglers">
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_1_mob.jpg" data-srcsetmob="images/content/cases/img_1_mob.jpg"
+                                          data-srcset="images/content/cases/img_1.jpg, images/content/cases/img_1@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_2_mob.jpg" data-srcsetmob="images/content/cases/img_2_mob.jpg"
+                                          data-srcset="images/content/cases/img_2.jpg, images/content/cases/img_2@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler" data-srcmob="images/content/cases/img_3_mob.jpg" data-srcsetmob="images/content/cases/img_3_mob.jpg"
+                                          data-srcset="images/content/cases/img_3.jpg, images/content/cases/img_3@2x.jpg 2x"></div>
+                                        <div class="article__image-toggler is-active" data-srcmob="images/content/cases/img_4_mob.jpg" data-srcsetmob="images/content/cases/img_4_mob.jpg"
+                                          data-srcset="images/content/cases/img_4.jpg, images/content/cases/img_4@2x.jpg 2x"></div>
+                                    </div>
+                                </span>
                                 <h2 class="article__title">X-Сlinic</h2>
                             </a>
                             <p class="article__preview-text">Разработка маркетинговой стратегии, разработка и продвижение сайта (CMS 1С-Битрикс), ведение социальных сетей, комплексная маркетинговая поддержка</p>
@@ -444,6 +503,7 @@
     <script src="js/preloader.js"></script>
     <script src="js/hero.js"></script>
     <script src="js/infinite-scroller.js"></script>
+    <script src="js/articles.js"></script>
     <script src="js/services.js"></script>
 
     <script src="js/wow.min.js"></script>

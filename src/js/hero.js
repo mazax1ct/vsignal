@@ -3,6 +3,11 @@ $(document).on('mouseenter click', '.js-hero', function () {
   $(this).addClass('is-active');
   $('#rotate').removeClass().addClass($(this).attr('data-rotate'));
   $('.js-clip-image').attr('xlink:href', $(this).attr('data-src'));
+
+  $('.hero__back img').attr('src', $(this).attr('data-srcmob'));
+  $('.hero__back img').attr('srcset', $(this).attr('data-srcsetmob'));
+  $('.hero__back source').attr('srcset', $(this).attr('data-srcset'));
+
   //$('.hero__content h1').html($(this).attr('data-title'));
   /*clearInterval(timerId);
   timerId = setInterval(function() {
