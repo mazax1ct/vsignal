@@ -1,0 +1,22 @@
+.flip-flap
+  cursor: pointer
+  height: 364px
+  transition: transform 0.6s
+  transform-style: preserve-3d
+  z-index: 1
+
+  &.is-flipped
+    transform: rotateY(180deg)
+
+  &__front,
+  &__back
+    background-color: #fff
+    backface-visibility: hidden
+    box-shadow: 0 0 6px 0 rgba($text-color, 0.1)
+    height: 100%
+    position: absolute
+    padding: 20px
+    width: 100%
+
+  &__back
+    transform: rotateY(180deg)
