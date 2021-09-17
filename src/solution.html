@@ -329,6 +329,7 @@
     <script src="js/jquery.twentytwenty.js"></script>
     <script>
         $(document).ready(function() {
+            $('.js-before-after').css('min-height', $(this).find('img').height());
             $(".js-before-after").twentytwenty({
                 before_label: 'До',
                 after_label: 'После',
