@@ -157,6 +157,28 @@ body
     @media(min-width: $lg)
       height: 20px
 
+.cols-2
+  @media(min-width: $tablet)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -20px
+    margin-right: -20px
+
+  &:not(:last-child)
+    margin-bottom: 40px
+
+    @media(min-width: $lg)
+      margin-bottom: 70px
+
+  .col
+    margin-bottom: 40px
+
+    @media(min-width: $tablet)
+      margin-bottom: 50px
+      padding-left: 20px
+      padding-right: 20px
+      width: 50%
+
 .cols-3
   @media(min-width: $tablet)
     display: flex
