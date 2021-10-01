@@ -133,7 +133,7 @@
       transition: fill 0.3s
       width: 25px
 
-  &__socials
+  .socials
     display: none
     font-size: 20px
     line-height: 1.7
@@ -146,32 +146,33 @@
       display: flex
       flex-wrap: wrap
 
-  &__socials-item
-    &:not(:last-child)
-      margin-bottom: 10px
+    &__item
+      &:not(:last-child)
+        margin-bottom: 10px
 
-      @media(min-width: $sm)
-        margin-right: 35px
+        @media(min-width: $sm)
+          margin-right: 35px
+          margin-bottom: 0
 
-    a
-      color: $text-color
-      text-decoration: none
+      a
+        color: $text-color
+        text-decoration: none
 
-      &:hover,
-      &:focus
-        color: $main-color-hover
+        &:hover,
+        &:focus
+          color: $main-color-hover
 
-      &:active
-        color: $main-color
+        &:active
+          color: $main-color
 
-  &__mail-block,
-  &__phone-block,
-  &__address
+  .mail-block,
+  .phone-block,
+  .address
     font-size: 16px
     line-height: 1.6
     letter-spacing: 0.48px
 
-  &__mail-block
+  .mail-block
     margin-bottom: 0
 
     @media(min-width: $sm)
@@ -180,7 +181,7 @@
       letter-spacing: 0.6px
       margin-bottom: 20px
 
-  &__phone-block
+  .phone-block
     display: none
     margin-bottom: 0
 
@@ -198,7 +199,7 @@
       &:active
         color: $main-color
 
-  &__address
+  .address
     display: none
 
     @media(min-width: $sm)
